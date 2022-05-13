@@ -1,7 +1,11 @@
-.pdf {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+
+/* ==========================================================================================================
+geral
+============================================================================================================*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,16 +14,32 @@ body {
     color: black;
     font-size: 25px;
   }
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
-  .light-mode {
-    background-color: white;
-    color: black;
-  }
+/* ==========================================================================================================
+header
+============================================================================================================*/
+body header {
+    max-width: 1680px;
+    height: 100px;
+}
 
-button {
+body header .menu {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+body header .menu ul {
+    list-style: none;
+}
+
+body header section .container {
+  padding-top: 10px;
+  height: 400px;
+  width: 1333px;
+  padding-right: 10px;
+}
+
+body header button {
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(5, 5, 5);
@@ -27,25 +47,25 @@ button {
     border-radius: 10px;
 }
 
-header {
-    max-width: 1680px;
-    height: 100px;
+body header .dark-mode {
+    background-color: black;
+    color: white;
 }
 
-header .menu {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+body header .light-mode {
+    background-color: white;
+    color: black;
 }
 
-header .menu ul {
-    list-style: none;
-    
-}
-
-section .container {
+body header .pdf {
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
-    height: 400px;
-    width: 1333px;
-    padding-right: 10px;
+}
+/* ==========================================================================================================
+footer
+============================================================================================================*/
+footer {
+    display: flex;
+    align-items: flex-end;
 }
