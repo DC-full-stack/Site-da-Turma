@@ -1,0 +1,150 @@
+/* RESTET */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+
+/* Termina o RESET */
+
+/* CSS do título (informações) */
+
+.module1__title {
+    width: 100%;
+    height: 5rem;
+    color: #000000;
+    background-color: #a9a9a9;
+    text-align: center;
+}
+
+/* Termina o CSS do título (informações) */
+
+/* CSS da aba de navegação */
+
+.module1 {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.module1__left-colum {
+    width: 10rem;
+    height: 100%;
+    background-color: #005385;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.navigator ul li {
+    margin: 9rem 0;    
+}
+
+.navigator ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.navigator ul li:first-child {
+    margin-top: 0;
+}
+
+.navigator ul li:last-child {
+    margin-bottom: 0;
+}
+
+.navigator::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    z-index: 0;
+}
+
+.navigator ul {
+    z-index: 1;
+}
+
+.navigator ul li a {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator ul li a:hover,
+.navigator ul li a.active { 
+    background-color: #b87700;
+}
+
+/* Termina o CSS da aba de navegação */
+
+/* CSS do conteúdo principal do Módulo 1 */
+
+.module01__main-content {
+    width: 100%;
+    height: 100%;
+    background-color: #ffa500;
+    padding-left: 3rem;
+}
+
+.module01__main-content-pdf {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.aula {
+    color: #000000;
+    padding: 10px;
+    width: 25%;
+    border: 1px solid #3d7908;
+}
+
+/* Termina o CSS do conteúdo principal do Módulo 1 */
+
+/* CSS do aside */
+
+.module1__resume_aside {
+    text-align: center;
+}
+
+.module1__resume_aside- {
+    display: block;
+    background-color: #a9a9a9;
+    color: white;
+    width: 33.333%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.resume {
+    background-color: red;
+    color: #ffffff;
+}
+
+.challenges {
+    background-color: blue;
+    color: #ffffff;
+}
