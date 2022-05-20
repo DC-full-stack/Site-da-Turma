@@ -6,7 +6,7 @@
     list-style: none;
     font-family: sans-serif;
     text-decoration: none;
-
+    
 }
 
 /* Termina o RESET */
@@ -14,10 +14,12 @@
 /* CSS do título (informações) */
 
 .module1__title {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 5rem;
     color: #000000;
-    background-color: #a9a9a9;
+    background-color: rgb(152, 143, 135);
     text-align: center;
 }
 
@@ -34,7 +36,7 @@
 .module1__left-colum {
     width: 10rem;
     height: 100%;
-    background-color: #005385;
+    background-color: rgb(0, 79, 111);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +88,7 @@
     width: 49px;
     height: 49px;
     border-radius: 50%;
-    background-color: #ffa500;
+    background-color: rgb(233, 108, 31);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +96,7 @@
 
 .navigator ul li a:hover,
 .navigator ul li a.active { 
-    background-color: #b87700;
+    background-color: rgb(196, 83, 13);
 }
 
 /* Termina o CSS da aba de navegação */
@@ -102,23 +104,31 @@
 /* CSS do conteúdo principal do Módulo 1 */
 
 .module01__main-content {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 70%;
     height: 100%;
-    background-color: #ffa500;
-    padding-left: 3rem;
+    background-color: rgb(233, 108, 31);
 }
 
 .module01__main-content-pdf {
+    text-align: center;
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
 }
 
+.txtIntro {
+    background-color: rgb(152, 143, 135);
+}
+
 .aula {
+    font-size: 24px;
     color: #000000;
     padding: 10px;
-    width: 25%;
-    border: 1px solid #3d7908;
+    width: 97%;
+    border: 1px solid #000000;
 }
 
 /* Termina o CSS do conteúdo principal do Módulo 1 */
@@ -127,24 +137,41 @@
 
 .module1__resume_aside {
     text-align: center;
+    width: 50%;;
+    background-color: rgb(233, 108, 31);
+    border: 1px solid black;
 }
 
 .module1__resume_aside- {
+    border: 1px solid black;
     display: block;
     background-color: #a9a9a9;
-    color: white;
-    width: 33.333%;
-    height: 150px;
+    color: #ffffff;
+    width: 100%;
+    height: 50%;
     margin-left: auto;
-    margin-right: 5rem;
+    margin-bottom: 3%;
 }
 
 .resume {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 95%;
+    margin-right: 15px;
+    height: 30%;
+    background-color: rgb(255, 0, 0);
     color: #ffffff;
 }
 
 .challenges {
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-right: 15px;
+    height: 61%;
+    background-color: rgb(0, 0, 255);
     color: #ffffff;
 }
