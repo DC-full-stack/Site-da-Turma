@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Turma</title>
+</head>
+
+<body>
+    <div class="navegacao">
+        <ul>
+            <li class="lista ativa" style="--clr:#f44336">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="at-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        </ion-icon>
+                    </span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const lista = document.querySelectorAll('.lista');
+        function ativarLink(item){
+            lista.forEach((item) =>
+            item.classLista.remove('ativa'));
+            this.classLista.add('ativa');
+        } 
+        lista.forEach((item) =>
+        item.addEventListener('click',ativarLink));
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222327;
+        }
+
+        .navegacao {
+            position: relative;
+            width: 1000px;
+            margin-top: 30px;
+            height: 80px;
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .navegacao ul {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 300px;
+            display: flex;
+            width: 700px;
+        }
+
+        .navegacao ul li {
+            list-style: none;
+            position: relative;
+            width: 70px;
+            height: 60px;
+            z-index: 2;
+        }
+
+
+        .navegacao ul li a {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .navegacao ul li a .icone {
+            position: relative;
+            display:block;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            line-height: 65px;
+            border-radius: 50%;
+            color: #222327;
+            font-size: 1.8em;
+        }
+
+        .navegacao ul li.ativa a .icone {
+            background: var(--clr);
+            color: #fff;
+            transform: translateY(-27px);
+        }
+
+
+        .navegacao ul li a .icone::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--clr);
+            border-radius: 50%;
+            filter: blur(5px);
+            opacity: 0.9;
+
+        }
+
+
+        .navegacao ul li .ativa a .icone::before {
+            opacity: 0.5;
+        }
+
+
+        .indicador {
+            position: absolute;
+            top: -20px;
+            width: 68px;
+            height: 60px;
+            background: #fff;
+            border-radius: 50%;
+            z-index: 1;
+            transition: 0.5;
+        }
+
+
+        .indicador::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -28px;
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            border-radius: 50%;
+            box-shadow: 15px 18px #fff;
+        }
+
+
+        .indicador::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: -28px;
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            border-radius: 50%;
+            box-shadow: 15px 18px #fff;
+        }
+
+        .navegacao ul li.nth :nth-child(0) .ativa ~ .indicador {
+            transform: translateX(calc(70px * 0));
+        }
+        .navegacao ul li.nth :nth-child(1) .ativa ~ .indicador {
+            transform: translateX(calc(70px * 1));
+        }
+        
+        .navegacao ul li.nth :nth-child(2) .ativa ~ .indicador {
+            transform: translateX(calc(70px * 0));
+        }
+        .navegacao ul li.nth :nth-child(3) .ativa ~ .indicador {
+            transform: translateX(calc(70px * 1));
+        }
+
+
+    </style>
+</body>
+
+</html>
