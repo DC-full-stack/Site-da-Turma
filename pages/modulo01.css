@@ -101,7 +101,7 @@
 
 /* Termina o CSS da aba de navegação */
 
-/* CSS do conteúdo principal do Módulo 1 */
+/* CSS do Container */
 
 .module01__main-content {
     display: flex;
@@ -131,9 +131,9 @@
     border: 1px solid #000000;
 }
 
-/* Termina o CSS do conteúdo principal do Módulo 1 */
+/* Termina o CSS do Container */
 
-/* CSS do aside */
+/* CSS da coluna de interação com JS + desafios */
 
 .module1__resume_aside {
     text-align: center;
@@ -175,3 +175,5 @@
     background-color: rgb(0, 0, 255);
     color: #ffffff;
 }
+
+/*  Termina o CSS da coluna de interação com JS + desafios */
