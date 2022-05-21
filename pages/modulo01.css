@@ -69,7 +69,7 @@ CSS da aba de navegação
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 
@@ -139,14 +139,15 @@ CSS do Container
 .module01__main-content {
     display: flex;
     justify-content: center;
-    width: 70%;
-    height: 100%;
+    width: 55vw;
+    height: 100vh;
     background-color: rgb(233, 108, 31);
 }
 
 .module01__main-content-pdf {
+    margin-left: 0.5rem;
     text-align: center;
-    width: 70%;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
@@ -179,7 +180,7 @@ CSS da coluna de interação com JS + desafios
 
 .module1__resume_aside {
     text-align: center;
-    width: 50%;;
+    width: 50vw;
     background-color: rgb(233, 108, 31);
     border: 1px solid black;
 }
