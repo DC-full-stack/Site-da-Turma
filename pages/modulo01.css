@@ -74,7 +74,9 @@ CSS da aba de navegação
 }
 
 .navigator ul li {
-    margin: 9rem 0;    
+    margin: 9rem 0;
+    transform: translate(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 .navigator ul li:hover {
