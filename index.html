@@ -25,12 +25,21 @@
     Barra de navegação
   -->
 
-  <div class="search-box">
-    <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox">
-    <a href="" class="search-btn">
-      <img src="/icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
-    </a>
-  </div>
+    <div class="search-box">
+      <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
+      <a href="" class="search-btn">
+        <img src="/icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
+      </a>
+    </div>
+
+    <datalist id="options">
+      <option value="Sobre"></option>
+      <option value="Módulo 1"></option>
+      <option value="Módulo 2"></option>
+      <option value="Módulo 3"></option>
+      <option value="Módulo 4"></option>
+    </datalist>
+
 
   <!--
      Barra de navegação
