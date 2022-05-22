@@ -14,26 +14,40 @@
 
   <div> Sobre </div>
 
-  <div> 
-    <a href="pages/modulo01.html"> Módulo 1 </a> 
+  <div>
+    <a href="pages/modulo01.html"> Módulo 1 </a>
   </div>
-  
-        <button onclick="darkMode()">Darkmode</button>
-        <button onclick="lightMode()">LightMode</button>
 
-        <script>
-              function darkMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
-                    element.className = "dark-mode";
-                    content.innerText = "Dark Mode is ON";
-          }
-              function lightMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
-                    element.className = "light-mode";
-                    content.innerText = "Dark Mode is OFF";
-          }
-        </script>
+  <button onclick="darkMode()">Darkmode</button>
+  <button onclick="lightMode()">LightMode</button>
+
+  <!--
+    Barra de navegação
+  -->
+  <div class="search-box">
+    <input type="text" class="search-txt" placeholder="Pesquisar">
+    <a href="#" class="search-button">
+      <img class="icon_loupe" src="icons/icon_loupe.png" alt="Lupa">
+    </a>
+  </div>
+  <!--
+     Barra de navegação
+  -->
+
+  <script>
+    function darkMode() {
+      var element = document.body;
+      var content = document.getElementById("DarkModetext");
+      element.className = "dark-mode";
+      content.innerText = "Dark Mode is ON";
+    }
+    function lightMode() {
+      var element = document.body;
+      var content = document.getElementById("DarkModetext");
+      element.className = "light-mode";
+      content.innerText = "Dark Mode is OFF";
+    }
+  </script>
 </body>
+
 </html>
