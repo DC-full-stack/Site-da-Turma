@@ -57,63 +57,37 @@ Barra de navegação
 
 ================================== */
 
-.search-box{
+.search-box {
+    margin-top: 15px;
     position: absolute;
-    margin-top: 10px;
-    background: rgb(152, 143, 135);
-    height: 25px;
-    padding: 10px;
+    background: #e8e3e3;
+    height: 40px;
+    padding: 0 10px;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
+    width: 500px;
 }
 
-.search-box:hover > .search-txt {
-    width: 185px;
-    transition: .5s ease-in-out;
-    padding: 0 6px;
-}
-
-.search-box:hover > .search-button {
-    background-color: white;
-    width: 40px;
-}
-
-.search-txt{
+.search-txt {
     border: none;
     background: none;
     outline: none;
     padding: 0;
-    color: #f0f5fb;
+    color: #c1baba;
     font-size: 16px;
     line-height: 40px;
-    width: 0;
-    transition: .5s ease-in-out;
-    font-family: sans-serif;
+    /* border-right: 2px solid gray; */
 }
 
-input::placeholder {
-    color: white;
-}
-
-.search-button {
-    width: 25px;
+.search-btn {
+    width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: rgb(152, 143, 135);
+    border-left: 1px solid #d7cdcd;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease-in-out;
-}
-
-.icon_loupe {
-    height: 20px;
-    width: 20px;
 }
 
 /* ===============================
