@@ -25,6 +25,7 @@ button {
     background-color: rgb(5, 5, 5);
     color: #fff;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 header {
@@ -49,3 +50,74 @@ header .menu ul {
     width: 1333px;
     padding-right: 10px;
 } */
+
+/* ===============================
+
+Barra de navegação
+
+================================== */
+
+.search-box{
+    position: absolute;
+    margin-top: 10px;
+    background: rgb(152, 143, 135);
+    height: 25px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.search-box:hover > .search-txt {
+    width: 185px;
+    transition: .5s ease-in-out;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-button {
+    background-color: white;
+    width: 40px;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s ease-in-out;
+    font-family: sans-serif;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.search-button {
+    width: 25px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(152, 143, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.icon_loupe {
+    height: 20px;
+    width: 20px;
+}
+
+/* ===============================
+
+Termina css da barra de navegação
+
+================================== */
