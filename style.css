@@ -9,15 +9,17 @@ body {
     background-color: white;
     color: black;
     font-size: 25px;
-  }
-  .dark-mode {
+}
+
+.dark-mode {
     background-color: black;
     color: white;
-  }
-  .light-mode {
+}
+
+.light-mode {
     background-color: white;
     color: black;
-  }
+}
 
 button {
     font-size: 20px;
@@ -70,12 +72,16 @@ Barra de navegação
     width: 500px;
 }
 
+input::placeholder {
+    color: #c1baba;
+}
+
 .search-txt {
     border: none;
     background: none;
     outline: none;
     padding: 0;
-    color: #c1baba;
+    color: #000000;
     font-size: 16px;
     line-height: 40px;
     /* border-right: 2px solid gray; */
