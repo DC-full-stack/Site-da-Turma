@@ -32,7 +32,7 @@ header {
     height: 100px;
 }
 
-header .menu {
+/* header .menu {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
@@ -41,11 +41,11 @@ header .menu {
 header .menu ul {
     list-style: none;
     
-}
+} */
 
-section .container {
+/* section .container {
     padding-top: 10px;
     height: 400px;
     width: 1333px;
     padding-right: 10px;
-}
+} */
