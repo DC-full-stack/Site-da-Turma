@@ -17,4 +17,6 @@ button {
     border-style:none;
     margin: 1vh;
     padding: 1vh;
+    cursor: pointer;
+    border: 1px solid white;
 }
