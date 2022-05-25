@@ -1,0 +1,22 @@
+  .dark-mode {
+    background-color: rgb(35,31,32);
+    color: white;
+  }
+  .light-mode {
+    background-color: white;
+    color: rgb(35,31,32);
+  }
+
+button {
+    display: block;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(35,31,32);
+    color: #fff;
+    border-radius: 20px;
+    border-style:none;
+    margin: 1vh;
+    padding: 1vh;
+    cursor: pointer;
+    border: 1px solid white;
+}

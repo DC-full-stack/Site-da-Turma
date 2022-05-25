@@ -1,0 +1,36 @@
+/* div {
+    display: block;
+} */
+.navigation {
+    position: relative;
+    width: 480px;
+    height: 60px;
+    /* background: rgb(35,31,32); */
+    background: rgb(0,79,111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+}
+.navigation ul {
+    display: flex;
+    width: 480px;
+}
+.navigation ul li {
+    list-style: none;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    z-index: 2;
+}
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
