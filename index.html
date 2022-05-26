@@ -12,28 +12,64 @@
 </head>
 
 <body>
-        <div class="navigation">
-          <ul>
-            <li> 
-                <a href="pages/sobre.html"> Sobre </a>
-            </li>
-            <li>
-                <a href="pages/modulo01.html"> M1 </a>
-            </li>
-            <li>
-                <a href="pages/erro404.html"> M2 </a>
-            </li>
-            <li>
-                <a href="pages/erro404.html"> M3 </a>
-            </li>
-            <li>
-                <a href="pages/erro404.html"> M4 </a>
-            </li>
-            <li>
-                <a href="pages/erro404.html"> Extra </a>
-            </li>
-        </ul>
-        </div>
+  <div class="navegacao">
+    <ul>
+        <li class="list ativa" style="--clr:#f44336">
+            <a href="./pages/sobre.html">
+                <span class="icone">
+                    <ion-icon name="people"></ion-icon>
+                </span>
+            </a>
+        </li>
+        <li class="list" style="--clr:#ffa117">
+            <a href="./pages/modulo01.html">
+                <span class="icon">
+                M1
+            </span>
+            </a>
+        </li>
+        <li class="list" style="--clr:#2196f3">
+            <a href="./pages/erro404.html">
+                <span class="icon">
+                    M2
+                </span>
+            </a>
+        </li>
+        <li class="list" style="--clr:#2196f3">
+          <a href="./pages/erro404.html">
+              <span class="icon">
+                  M3
+              </span>
+          </a>
+      </li>
+      <li class="list" style="--clr:#2196f3">
+        <a href="./pages/erro404.html">
+            <span class="icone">
+                <ion-icon name="add-circle"></ion-icon>
+            </span>
+        </a>
+    </li>
+        <div class="indicador"></div>
+    </ul>
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+    const list = document.querySelectorAll('.list');
+
+    function ativaLink(){
+        list.forEach((item) =>
+        item.classList.remove('ativa'));
+        this.classList.add('ativa');
+    } 
+
+    list.forEach((item) =>
+    item.addEventListener('click', ativaLink));
+
+</script>
   
         <button onclick="darkMode()">Darkmode</button>
         <button onclick="lightMode()">LightMode</button>
@@ -56,14 +92,14 @@
 
         <script>
               function darkMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
+                    let element = document.body;
+                    let content = document.getElementById("DarkModetext");
                     element.className = "dark-mode";
                     content.innerText = "Dark Mode is ON";
           }
               function lightMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
+                    let element = document.body;
+                    let content = document.getElementById("DarkModetext");
                     element.className = "light-mode";
                     content.innerText = "Dark Mode is OFF";
           }

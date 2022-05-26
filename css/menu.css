@@ -1,73 +1,133 @@
-/* div {
-    display: block;
-} */
-.navigation {
+.navegacao {
     position: relative;
-    width: 480px;
+    width: 400px;
     height: 60px;
-    /* background: rgb(35,31,32); */
-    background: rgb(0,79,111);
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 21px;
+    border-radius: 10px;
 }
-.navigation ul {
+
+.navegacao ul {
     display: flex;
-    width: 480px;
+    width: 350px;
 }
-.navigation ul li {
+
+.navegacao ul li {
     list-style: none;
     position: relative;
-    width: 75px;
-    height: 75px;
-    justify-content: center;
+    width: 70px;
+    height: 60px;
     z-index: 2;
 }
-.navigation ul li a {
+
+.icon {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #222327;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.navegacao ul li a {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    color: white;
-    text-decoration: none;
 }
 
-.search-box {
-    margin-top: 9rem;
+
+.navegacao ul li a .icone {
+    position: relative;
+    display:block;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50%;
+    color: #222327;
+    font-size: 1.5em;
+}
+
+.navegacao ul li.ativa a .icone {
+    background: var(--clr);
+    color: #fff;
+    transform: translateY(-27px);
+}
+
+
+.navegacao ul li a .icone::before {
+    content: '';
     position: absolute;
-    background: #e8e3e3;
-    height: 40px;
-    padding: 0 10px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 500px;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    border-radius: 50%;
+    filter: blur(5px);
+    opacity: 0;
+
 }
 
-input::placeholder {
-    color: #c1baba;
+
+.navegacao ul li .ativa a .icone::before {
+    opacity: 0.5;
 }
 
-.search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    color: #000000;
-    font-size: 16px;
-    line-height: 40px;
-    /* border-right: 2px solid gray; */
+
+.indicador {
+    position: absolute;
+    top: -35px;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.5;
 }
 
-.search-btn {
-    width: 40px;
-    height: 40px;
-    border-left: 1px solid #d7cdcd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.indicador::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px #fff;
+}
+
+
+.indicador::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px #fff;
+}
+
+.navegacao ul li:nth-child(1).ativa ~ .indicador {
+    transform: translateX(calc(70px * 0));
+}
+.navegacao ul li:nth-child(2).ativa ~ .indicador {
+    transform: translateX(calc(70px * 1));
+}
+.navegacao ul li:nth-child(3).ativa ~ .indicador {
+    transform: translateX(calc(70px * 2));
+}
+.navegacao ul li:nth-child(4).ativa ~ .indicador {
+    transform: translateX(calc(70px * 3));
+}
+.navegacao ul li:nth-child(5).ativa ~ .indicador {
+    transform: translateX(calc(70px * 4));
 }
