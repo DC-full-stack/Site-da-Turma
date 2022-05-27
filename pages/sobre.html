@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time</title>
     <link rel="stylesheet" href="/pages/pages.css/sobre.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- <header>
@@ -70,10 +71,107 @@
             </nav>
         </div>
 
-        <section class="module01__main-content">
-            <div class="module01__main-content">
+        <section>
 
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+
+                 <div class="swiper-slide card">
+                   <div class="card-content">
+                     <div class="image">
+                       <a class="link_img" target="_blank" href="https://www.linkedin.com/in/carlosxjm/"><img src="/imgs/imagensDoCarrossel/Carlos.png" alt="" style="width: 350px; height: 500px;"><p>Prof. Carlos Marques</p></a>
+                     </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href="https://www.linkedin.com/in/mdsousajorge/"><img src="/imgs/imagensDoCarrossel/Jorge.png" alt="" style="width: 350px; height: 500px;"><p>Jorge Mendonça</p></a>
+                      </div>
+                     </div>
+                   </div>
+                   
+                   <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href="https://www.linkedin.com/in/silmara-m-6471aa236/"><img src="/imgs/imagensDoCarrossel/Silmara.png" alt="" style="width: 350px; height: 500px;"><p>Silmara M.</p></a>
+                      </div>
+                     </div>
+                   </div>
+                   
+                   <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href="https://www.linkedin.com/in/rafaela-m-s-cauhy-ba8368236/"><img src="/imgs/imagensDoCarrossel/Rafaela.png" alt="" style="width: 350px; height: 500px;"><p>Rafaela M S Cauhy </p></a>
+                      </div>
+                     </div>
+                   </div>
+
+                   <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href="https://www.linkedin.com/in/fernando-chaves-rodrigues-/"><img src="/imgs/imagensDoCarrossel/Fernando.png" alt="" style="width: 350px; height: 500px;"><p>Fernando Chaves</p></a>
+                      </div>
+                     </div>
+                   </div>
+
+                   <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href="https://www.linkedin.com/in/danilo-domingos-fonseca-te%C3%B3filo-287477162/"><img src="/imgs/imagensDoCarrossel/Danilo.png" alt="" style="width: 350px; height: 500px;"><p>Danilo Domingos</p></a>
+                      </div>
+                     </div>
+                   </div>
+
+                   <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href="https://www.linkedin.com/in/carolina-albuquerque-56b4a2236/"><img src="/imgs/imagensDoCarrossel/Carolina.png" alt="" style="width: 350px; height: 500px;"><p>Carolina Albuquerque</p></a>
+                      </div>
+                     </div>
+                   </div>
+
+                   <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <a class="link_img" target="_blank" href=""><img src="/imgs/imagensDoCarrossel/Matheus.png" alt="" style="width: 350px; height: 500px;"><p>Matheus Queiroz</p></a>
+                      </div>
+                     </div>
+                   </div>
+
+                </div>
+
+              </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
         </section>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+
+            let swiper = new Swiper(" .mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                }
+            }
+            )
+
+        </script>
 
     </div>
 
