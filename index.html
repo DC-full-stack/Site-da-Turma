@@ -34,9 +34,9 @@
             </li>
         </ul>
         </div>
-  
-        <button onclick="darkMode()">Darkmode</button>
-        <button onclick="lightMode()">LightMode</button>
+        
+          <button class="btn">Darkmode</button>
+        
 
         <div class="search-box">
             <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
@@ -55,18 +55,28 @@
       
 
         <script>
-              function darkMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
-                    element.className = "dark-mode";
-                    content.innerText = "Dark Mode is ON";
+          //     function darkMode() {
+          //           var element = document.body;
+          //           var content = document.getElementById("DarkModetext");
+          //           element.className = "dark-mode";
+          //           content.innerText = "Dark Mode is ON";
+          // }
+          //     function lightMode() {
+          //           var element = document.body;
+          //           var content = document.getElementById("DarkModetext");
+          //           element.className = "light-mode";
+          //           content.innerText = "Dark Mode is OFF";
+          // }
+
+
+          const btn = document.querySelector('.btn');
+          const body = document.querySelector('body');
+          
+          btn.onclick = function() {
+            this.classList.toggle('active')
+            body.classList.toggle('active')
           }
-              function lightMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
-                    element.className = "light-mode";
-                    content.innerText = "Dark Mode is OFF";
-          }
+
         </script>
 </body>
 </html>

@@ -1,23 +1,46 @@
-  .dark-mode {
-    background-color: rgb(35,31,32);
-    color: white;
-  }
-  .light-mode {
-    background-color: white;
-    color: rgb(35,31,32);
-  }
+body {
+  background-color: #fff;
+  transition: .5s;
+}
 
-button {
-    display: block;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(35,31,32);
-    color: #fff;
-    border-radius: 20px;
-    border-style:none;
-    margin: 1vh;
-    transform: translate(-30.7rem, -7.5rem);
-    padding: 1vh;
-    cursor: pointer;
-    border: 1px solid white;
+body.active {
+  background-color: rgb(35, 31, 32);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(35, 31, 32);
+  color: #fff;
+  border-style: none;
+  margin: 1vh;
+  padding: 1vh;
+  width: 8rem;
+  height: 50px;
+  border-radius: 60px;
+  cursor: pointer;
+  transform: translate(-30.62rem, -7.5rem);
+}
+
+.btn.active {
+  border: 2px solid #ffffff;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: left .5s;
+}
+
+.btn.active:before {
+  left: 85px;
 }

@@ -36,7 +36,6 @@
 }
 
 .search-box {
-    margin-top: 9rem;
     position: absolute;
     background: #e8e3e3;
     height: 40px;
@@ -46,7 +45,7 @@
     justify-content: space-between;
     align-items: center;
     width: 480px;
-    transform: translate(-8.4rem, -8.5rem);
+    transform: translate(-4.7rem, -4rem);
 }
 
 input::placeholder {
