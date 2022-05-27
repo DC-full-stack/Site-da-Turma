@@ -16,6 +16,7 @@ button {
     border-radius: 20px;
     border-style:none;
     margin: 1vh;
+    transform: translate(-30.7rem, -7.5rem);
     padding: 1vh;
     cursor: pointer;
     border: 1px solid white;

@@ -45,7 +45,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 480px;
+    transform: translate(-8.4rem, -8.5rem);
 }
 
 input::placeholder {
