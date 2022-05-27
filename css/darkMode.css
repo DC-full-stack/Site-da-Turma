@@ -17,7 +17,7 @@ body.active {
   border-style: none;
   margin: 1vh;
   padding: 1vh;
-  width: 8rem;
+  width: 11rem;
   height: 50px;
   border-radius: 60px;
   cursor: pointer;
@@ -42,5 +42,5 @@ body.active {
 }
 
 .btn.active:before {
-  left: 85px;
+  left: 134px;
 }

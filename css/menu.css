@@ -45,7 +45,7 @@
     justify-content: space-between;
     align-items: center;
     width: 480px;
-    transform: translate(-4.7rem, -4rem);
+    transform: translate(-6.2rem, -4rem);
 }
 
 input::placeholder {
