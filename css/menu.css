@@ -1,27 +1,21 @@
-/* div {
-    display: block;
-} */
 .navigation {
     position: relative;
     width: 480px;
-    height: 60px;
-    /* background: rgb(35,31,32); */
+    height: 55px;
     background: rgb(0,79,111);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 21px;
 }
 .navigation ul {
     display: flex;
-    width: 480px;
+    width: 90%;
 }
 .navigation ul li {
     list-style: none;
     position: relative;
-    width: 75px;
-    height: 75px;
-    justify-content: center;
+    width: 100%;
     z-index: 2;
 }
 .navigation ul li a {
@@ -31,21 +25,36 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    transform: translate(1.2);
+    transition: 0.3s ease-in-out;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.navigation ul li a:hover {
+    width: 55px;
+    height: 55px;
+    background: rgb(233,108,31);
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+}
 .search-box {
     position: absolute;
     background: #e8e3e3;
     height: 40px;
     padding: 0 10px;
-    border-radius: 40px;
+    border-radius: 21px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 480px;
-    transform: translate(-6.2rem, -4rem);
+    transform: translate(-6rem, -4rem);
 }
 
 input::placeholder {
