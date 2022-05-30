@@ -12,68 +12,47 @@
 </head>
 
 <body>
-  <div class="navegacao">
-    <ul>
-        <li class="list ativa" style="--clr:rgb(152,143,135)">
-            <a href="./pages/sobre.html">
-                <span class="icone">
-                    <ion-icon name="people"></ion-icon>
-                </span>
-            </a>
-        </li>
-        <li class="list" style="--clr:rgb(0,79,111)">
-            <a href="./pages/modulo01.html">
-                <span class="icon">
-                M1
-            </span>
-            </a>
-        </li>
-        <li class="list" style="--clr:rgb(233,108,31)">
-            <a href="./pages/erro404.html">
-                <span class="icon">
-                    M2
-                </span>
-            </a>
-        </li>
-        <li class="list" style="--clr:rgb(35,31,32)">
-          <a href="./pages/erro404.html">
-              <span class="icon">
-                  M3
-              </span>
-          </a>
-      </li>
-      <li class="list" style="--clr:rgb(152,143,135)">
-        <a href="./pages/erro404.html">
-            <span class="icone">
-                <ion-icon name="add-circle"></ion-icon>
-            </span>
-        </a>
-    </li>
-        <div class="indicador"></div>
-    </ul>
-</div>
+          <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="pages/sobre.html">
+                        <span > <ion-icon name="people-outline"></ion-icon> </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/modulo01.html">
+                        <span> 1 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> 2 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> 3 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> 4 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> <ion-icon name="beer-outline"></ion-icon> </span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>    
 
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>
-
-    const list = document.querySelectorAll('.list');
-
-    function ativaLink(){
-        list.forEach((item) =>
-        item.classList.remove('ativa'));
-        this.classList.add('ativa');
-    } 
-
-    list.forEach((item) =>
-    item.addEventListener('click', ativaLink));
-
-</script>
-  
-        <button onclick="darkMode()">Darkmode</button>
-        <button onclick="lightMode()">LightMode</button>
-
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+        <button class="btn">Darkmode</button>
+        
         <div class="search-box">
             <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
             <a href="" class="search-btn">
@@ -91,18 +70,28 @@
       
 
         <script>
-              function darkMode() {
-                    let element = document.body;
-                    let content = document.getElementById("DarkModetext");
-                    element.className = "dark-mode";
-                    content.innerText = "Dark Mode is ON";
+          //     function darkMode() {
+          //           var element = document.body;
+          //           var content = document.getElementById("DarkModetext");
+          //           element.className = "dark-mode";
+          //           content.innerText = "Dark Mode is ON";
+          // }
+          //     function lightMode() {
+          //           var element = document.body;
+          //           var content = document.getElementById("DarkModetext");
+          //           element.className = "light-mode";
+          //           content.innerText = "Dark Mode is OFF";
+          // }
+
+
+          const btn = document.querySelector('.btn');
+          const body = document.querySelector('body');
+          
+          btn.onclick = function() {
+            this.classList.toggle('active')
+            body.classList.toggle('active')
           }
-              function lightMode() {
-                    let element = document.body;
-                    let content = document.getElementById("DarkModetext");
-                    element.className = "light-mode";
-                    content.innerText = "Dark Mode is OFF";
-          }
+
         </script>
 </body>
 </html>
