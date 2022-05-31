@@ -6,34 +6,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Site da Turma</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/darkMode.css">
+  <link rel="stylesheet" href="./css/menu.css">
 </head>
 
 <body>
-  <div> Home </div>
+          <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="pages/sobre.html">
+                        <span > <ion-icon name="people-outline"></ion-icon> </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/modulo01.html">
+                        <span> 1 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> 2 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> 3 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> 4 </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="pages/erro404.html">
+                        <span> <ion-icon name="beer-outline"></ion-icon> </span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>    
 
-  <div> Sobre </div>
-
-  <div> 
-    <a href="pages/modulo01.html"> Módulo 1 </a> 
-  </div>
-  
-        <button onclick="darkMode()">Darkmode</button>
-        <button onclick="lightMode()">LightMode</button>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+        <button class="btn">Darkmode</button>
+        
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
+            <a href="" class="search-btn">
+              <img src="./icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
+            </a>
+          </div>
+      
+          <datalist id="options">
+            <option value="Sobre"></option>
+            <option value="Módulo 1"></option>
+            <option value="Módulo 2"></option>
+            <option value="Módulo 3"></option>
+            <option value="Módulo 4"></option>
+          </datalist>
+      
 
         <script>
-              function darkMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
-                    element.className = "dark-mode";
-                    content.innerText = "Dark Mode is ON";
+          //     function darkMode() {
+          //           var element = document.body;
+          //           var content = document.getElementById("DarkModetext");
+          //           element.className = "dark-mode";
+          //           content.innerText = "Dark Mode is ON";
+          // }
+          //     function lightMode() {
+          //           var element = document.body;
+          //           var content = document.getElementById("DarkModetext");
+          //           element.className = "light-mode";
+          //           content.innerText = "Dark Mode is OFF";
+          // }
+
+
+          const btn = document.querySelector('.btn');
+          const body = document.querySelector('body');
+          
+          btn.onclick = function() {
+            this.classList.toggle('active')
+            body.classList.toggle('active')
           }
-              function lightMode() {
-                    var element = document.body;
-                    var content = document.getElementById("DarkModetext");
-                    element.className = "light-mode";
-                    content.innerText = "Dark Mode is OFF";
-          }
+
         </script>
 </body>
 </html>

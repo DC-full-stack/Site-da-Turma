@@ -36,6 +36,10 @@ CSS do título (informações)
     text-align: center;
 }
 
+.module1__title .h1 {
+    margin: auto;
+}
+
 /* =====================================================
 
 Termina o CSS do título (informações)
@@ -62,6 +66,7 @@ CSS da aba de navegação
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 110%;
 }
 
 .navigator {
@@ -118,6 +123,11 @@ CSS da aba de navegação
     align-items: center;
 }
 
+.navigator ul li a p {
+    color: black;
+    font-size: 25px;
+}
+
 .navigator ul li a:hover,
 .navigator ul li a.active { 
     background-color: rgb(196, 83, 13);
@@ -140,7 +150,7 @@ CSS do Container
     display: flex;
     justify-content: center;
     width: 55vw;
-    height: 100vh;
+    height: 110%;
     background-color: rgb(233, 108, 31);
 }
 
@@ -180,7 +190,8 @@ CSS da coluna de interação com JS + desafios
 
 .module1__resume_aside {
     text-align: center;
-    width: 50vw;
+    width: 35.67vw;
+    height: 109.8%;
     background-color: rgb(233, 108, 31);
     border: 1px solid black;
 }
