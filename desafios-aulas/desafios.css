@@ -1,0 +1,41 @@
+@charset "UFT8";
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%*/
+}
+
+body {
+    height: 100vh;
+    background-image: radial-gradient(circle, #004F6F, #231F20);
+    display: flex;
+}
+
+main {
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 700px;
+    padding: 3%;
+    margin: auto;
+}
+
+h1 {
+    color: rgb(0,79,111);
+    text-align: center;
+    margin: 3% auto;
+}
+
+h2 {
+    color: rgb(0,79,111);
+    text-align: center;
+    margin: 3% auto;
+}
+
+p {
+    margin: 10px 0;
+}
+
+li {
+    margin: 3% 0;
+}
