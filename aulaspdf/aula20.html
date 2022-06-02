@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 20</title>
+</head>
+<body>
+  <p>
+    Digital College Fortaleza Ceará
+  </p>
+  <p>
+    Prof. Carlos Marques
+  </p>
+  <p>
+    Resumo Fernando Chaves
+  </p>
+  <h1>
+    Aula 20
+  </h1>
+  <ul>
+    <li>
+      Objeto
+    </li>
+  </ul>
+  <pre>
+    let meuObjeto = {
+      Chave1:"A"
+      Chave2: "B"
+    }
+  </pre>
+  <p> Objetos não são indicados com índices, mas com chaves.</p>
+  <p>Para indicar itens dentro do Objeto usa: meuObjeto.chave1</p>
+  <pre>
+    Ex:
+    let pessoa = {
+    nome: "Carlos",
+    idade: 31,
+    conhecimentos: ['PHP', 'Javascript', 'C'],
+    } 
+  </pre>
+  <p>
+    Para acessar um elemento específico dentro da chave:
+  </p>
+  <pre>
+    pessoa.nome
+    pessoa.idade
+    pessoa.conhecimentos[1]
+  </pre>
+  <pre>
+    Para sobrescrever:
+    pessoa.nome = "João"
+    Exercício: Retornar o nome dos aprovados para tirar a CNH 
+  </pre>
+ 
+  &lt; script &gt;
+    <pre>
+      let pessoas = [
+  {
+  nome: "Fernando",
+  dataDeNascimento: "2002-12-29",
+  aprovado: true,
+  },
+
+  {
+  nome: "José",
+  dataDeNascimento: "1997-04-07",
+  aprovado: false,
+  },
+
+  {
+  nome: "Sara",
+  dataDeNascimento: "2005-07-16",
+  aprovado: false,
+  },
+
+  {
+  nome: "Carla",
+  dataDeNascimento: "2000-01-20",
+  aprovado: true,
+  },
+
+  {
+  nome: "Pedro",
+  dataDeNascimento: "1990-08-03",
+  aprovado: true,
+  }
+  ]
+
+  function listaDeAprovadosCNH() {
+  for (let i = 0; i < pessoas.length; i++) {
+  let pessoa = pessoas[i]
+  if (pessoa.aprovado && pessoa.dataDeNascimento < '2004-05-24') {
+  console.log(`${pessoa.nome} que nasceu no ano ${pessoa.dataDeNascimento}
+  está aprovado`)
+  } 
+  else {
+  console.log(`${pessoa.nome} que nasceu no ano ${pessoa.dataDeNascimento}
+  está reprovado`)
+  }
+  }
+
+  }
+  listaDeAprovadosCNH()
+ &lt;/script &gt; 
+   </pre>
+
+   <a target="_blank" href="/pdfs/Aula 20 [24.05.22] - Objeto.pdf"><input type="button" value="Imprimir"></a>
+</body>
+</html>

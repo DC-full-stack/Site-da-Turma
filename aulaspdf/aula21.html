@@ -5,175 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> AULA 21</title>
+    <link rel="stylesheet" href="aulaspdf.css">
 </head>
+
+<style>
+    .container-video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0px;
+        margin-bottom: 5%;
+        margin-left: 7.5%;
+    }
+
+    ol {
+        margin: 1%;
+    }
+
+    p {
+        margin: 2%;
+    }
+</style>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-        Prof. Carlos Marques
-    </p>
-    <p>
-        Resumo Fernando Chaves
-    </p>
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Fernando Chaves
+            </p>
+        </div>
 
-    <h1>
-        Aula 21
-    </h1>
+        <h1>
+            Aula 21 - Objeto, Função e Interação do Javascript com o navevgador
+        </h1>
 
-    <ul type="desc">
-        <li>
-            Objeto
-        </li>
-    </ul>
+        <div class="container-video">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/vB-aPrlSEXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/7MG3O_-ZqGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/mc3TKp2XzhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/UftSB4DaRU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    <p>
-        Ex:
-    </p>
-
-    <img src="/aulaspdf/imgs-aulas/aula21/exObjeto.png" alt="">
-
-    <ol>
-        Forma de acessar um elemento dentro do objeto
-            <li>
-                Let n = pessoa.nome
-            </li>
-            <li>
-                Let n = pessoa["nome"]
-            </li>
-    </ol>
-
-    <p>
-        Acessar elemento dentro do objeto que está dentro de um array <br>
-        pessoa.experiencias[0].empresa
-    </p>
-
-    <p>
-        Para imprimir os elementos:
-    </p>
-
-    <img src="/aulaspdf/imgs-aulas/aula21/imprimeObjeto.png" alt="" width="450rem">
-
-    <ul type="desc">
-        <li>
-            Declaração e chamada de função
-        </li>
-    </ul>
-
-    <p>
-        Ex:
-    </p>
-
-    <img src="/aulaspdf/imgs-aulas/aula21/ex1Function.png" alt="">
-
-    <p>
-        Let x = 6
-    </p>
-
-    <p>
-        Soma (x, 10) sendo x igual a 6, 6 passa a ser o parâmetro "a" retornando 16 como resultado
-    </p>
-
-    <p>
-        Também é possível colocar uma function dentro de uma variável:
-    </p>
-
-    <p>
-        Let y = soma <br>
-        y(2, 10) == 12 sendo a == 2 e b == 10
-    </p>
-
-    <img src="/aulaspdf/imgs-aulas/aula21/ex2Function.png" alt="">
-
-    <p>
-        Em uma calculadora ao clicar no botão de igual teria a ativação de uma função OBS: op == operação (soma, subtração, multiplicação, divisão, ...)
-    </p>
-
-    <img src="/aulaspdf/imgs-aulas/aula21/ex2.1function.png" alt="">
-
-    <p>
-        ExecutarOperacao(soma, 1, 2) // Chamada da function executarOperacao
-    </p>
-
-    <p>
-        Op = função soma, a = 1 e b = 2, assim: return == 3
-    </p>
-
-    <p>
-        Se tivesse uma function multiplicação ao chamar executarOperacao teria
-    </p>
-
-    <p>
-        Op = função multiplicação, a = 1, b = 2, assim: return == 2
-    </p>
-
-    <p>
-        <b>OBS: A ordem dos parâmetros importa</b>
-    </p>
-
-    <img src="/aulaspdf/imgs-aulas/aula21/ex3.1function.png" alt="">
+      <h2>
+          Objeto
+      </h2>
 <br>
-    <img src="/aulaspdf/imgs-aulas/aula21/ex3.2function.png" alt="">
+        <div class="texto-container">
+            <p>
+                Ex:
+            </p>
 
-    <p>
-        Seria como ter feito assim:
-    </p>
+            <img src="/aulaspdf/imgs-aulas/aula21/exObjeto.png" alt="">
 
-    <img src="/aulaspdf/imgs-aulas/aula21/ex3.3function.png" alt="">
+            <p class="subtitulos">
+                Forma de acessar um elemento dentro do objeto
+            </p>
+                <ol>
+                    <li>
+                        Let n = pessoa.nome
+                    </li>
+                    <li>
+                        Let n = pessoa["nome"]
+                    </li>
+                </ol>
 
-    <p>
-        ExecutarOperacao(subtracao, 3, 10)
-    </p>
+            <p class="subtitulos">
+                Acessar elemento dentro do objeto que está dentro de um array
+            </p>
 
-    <ul type="desc">
-        <li>
+            <p>
+                pessoa.experiencias[0].empresa
+            </p>
+
+            <p class="subtitulos">
+                Para imprimir os elementos:
+            </p>
+
+            <img src="/aulaspdf/imgs-aulas/aula21/imprimeObjeto.png" alt="" width="450rem">
+        </div>
+        
+        <div class="texto-container">
+            <h2>
+                Declaração e chamada de função
+            </h2>
+<br>
+        <p>
+            Ex:
+        </p>
+
+        <img src="/aulaspdf/imgs-aulas/aula21/ex1Function.png" alt="">
+
+        <p>
+            let x = 6
+        </p>
+
+        <p>
+            soma(x, 10) sendo x igual a 6, 6 passa a ser o parâmetro "a" retornando 16 como resultado
+        </p>
+
+        <p>
+            <b>OBS: Também é possível colocar uma function dentro de uma variável:</b>
+        </p>
+
+        <p>
+            let y = soma <br>
+            y(2, 10) == 12 sendo a == 2 e b == 10
+        </p>
+<br>
+        <p class="subtitulos">
+            Em uma calculadora ao clicar no botão de igual teria a ativação de uma função OBS: op == operação (soma,
+            subtração, multiplicação, divisão, ...)
+        </p>
+
+        <img src="/aulaspdf/imgs-aulas/aula21/ex2Function.png" alt="">
+
+        <img src="/aulaspdf/imgs-aulas/aula21/ex2.1function.png" alt="">
+
+        <p>
+            executarOperacao(soma, 1, 2) // Chamada da function executarOperacao
+        </p>
+
+        <p>
+            op = função soma, a = 1 e b = 2, assim: return == 3
+        </p>
+
+        <p>
+            Se tivesse uma function multiplicação ao chamar executarOperacao teria
+        </p>
+
+        <p>
+            Op = função multiplicação, a = 1, b = 2, assim: return == 2
+        </p>
+
+        <p>
+            <b>OBS: A ordem dos parâmetros importa</b>
+        </p>
+
+        <img src="/aulaspdf/imgs-aulas/aula21/ex3.1function.png" alt="">
+        <br>
+        <img src="/aulaspdf/imgs-aulas/aula21/ex3.2function.png" alt="">
+
+        <p>
+            Seria como ter feito assim:
+        </p>
+
+        <img src="/aulaspdf/imgs-aulas/aula21/ex3.3function.png" alt="">
+
+        <p>
+            ExecutarOperacao(subtracao, 3, 10)
+        </p>
+
+        </div>
+
+        <h2>
             Interação do Javascript com o navegador
-        </li>
-    </ul>
+        </h2>
 
-    <p>
-        console.log
-    </p>
+        <div class="texto-container">
+            <p>
+            console.log
+        </p>
 
-    <p>
-        Console == objeto
-    </p>
+        <p>
+            Console == objeto
+        </p>
 
-    <p>
-        Log == chave e dentro dessa chave possui uma função
-    </p>
+        <p>
+            Log == chave e dentro dessa chave possui uma função
+        </p>
 
-    <p>
-        É possível ver dentro do console no DevTools
-    </p>
+        <p>
+            É possível ver dentro do console no DevTools
+        </p>
 
-    <img src="/aulaspdf/imgs-aulas/aula21/console.log" alt="" width="600rem">
+        <img src="/aulaspdf/imgs-aulas/aula21/console.log" alt="" width="600rem">
+        
+        </div>
 <br>
-    <a href="/pdfs/Aula 21 [26.05.2022] - Objeto, Função e Interação do Javascript com o navevgador.pdf" target="_blank"><input type="button" value="Imprimir"></a>
-
-    <h2>
-        Vídeos referentes à aula:
-    </h2>
-    
-    <ul type="desc">
-        <li>
-            Objetos
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=vB-aPrlSEXs">Curso de JavaScript #4 - Objetos parte 1/2 (2020)</a> Por Programador a Bordo
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=7MG3O_-ZqGc">Curso de JavaScript #5 - Objetos parte 2/2 (2020)</a> Por Programador a Bordo
-                    </li>
-                </ul>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=mc3TKp2XzhI">Funções - Curso JavaScript #16</a> Por Curso em Vídeo
-        </li>
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=UftSB4DaRU4">Manipulação de DOM com JavaScript, do zero, na prática | Masterclass #18</a> Por Rocketseat
-        </li>
-    </ul>
-
+        <div class="botao-container">
+            <a target="_blank" href="/pdfs/Aula 21 [26.05.2022] - Objeto, Função e Interação do Javascript com o navevgador.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+            </a>
+            <a href="/desafios-aulas/desafio-aula21.html">
+                <button class="botao">
+                    Desafio
+                </button>
+            </a>
+        </div>  
+    </main>
 </body>
 </html>
