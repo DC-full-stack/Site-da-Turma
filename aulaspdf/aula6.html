@@ -1,217 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Aula 6 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-         Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-    <h1> 
-       Aula 6 -  Margin, border, padding
-    </h1>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tF98sV0bN-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header class="navigation">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <h2> 
-        Resumo
-    </h2>
-    <p>
-        CSS
-    </p>
-    <p>
-        Cores
-    </p>
-    <ul type="desc">
-        <li> 
-            Rgb [red, green, blue] - 0 à 255
-        </li>
-    <ul type="circle">
-        <li> 
-            Rgb(10,50,30)
-        </li>
-    </ul type="circle">
-        <li> 
-            Rgba [red, green, blue, alpha]
-        </li>
-    <ul type="circle">
-        <li> 
-            Alpha de 0 à 1 [transparência]
-        </li>
-    </ul type="circle">
-        <li> 
-            Hexadecimais - [#] - 0 1 2 3 4 5 6 7 8 9 A B C D E F
-        </li>
-    <ul type="circle">
-        <li> 
-            Red - #800000
-        </li>
-        <li>
-            Cinza - #323232
-        </li>
-    </ul type="circle">
-        <li>
-            Paleta de cores
-        </li>
-    </ul type="desc">
-    <p>
-        Margen, border, padding
-    </p>
-    <ul type="desc">
-        <li>
-            Margin: 8px;
-        </li>
-    <ul type="circle">
-        <li>
-            Margin-top: 20px;
-        </li>
-        <li>
-            Margin-right: 8px;
-        </li>
-        <li>
-            margin-bottom: 8px;
-        </li>
-        <li>
-            Margin-left: 8px
-        </li>
-    </ul type="circle">
-        <li>
-            Margin: 8px [top, bottom] 10px[left, right];
-        </li>
-        <li>
-            Margin: 8px [top] 10px[left, right] 12px[bottom];
-        </li>
-        <li>
-            Margin: 8px [top] 10px[right] 12px[bottom] 14px[left];
-        </li>
-    <ul type="circle">
-        <li>
-            Segue sentido horário
-        </li>
-    </ul type="circle"> 
-        <li>
-            Padding
-        </li>
-    <ul type="circle">
-        <li>
-            Padding-top: 2%;
-        </li>
-        <li>
-            Padding-right: 2%;
-        </li>
-        <li>
-            Padding-bottom: 2%;
-        </li>
-        <li>
-            Padding-left: 2%;
-        </li>
-    </ul type="circle">
-        <li>
-            Border-style - para ver os exemplos
-        </li>
-        <li>
-            Body &gt margin: 0;
-        </li>
-    </ul type="desc">
-    <img src="/aulaspdf/imgs-aulas/aula6/images.png">
-    <p>
-        Comandos
-    </p>
-    <ul type="desc">
-        <li>
-            Shift + pgup [...]
-        </li>
-    </ul type="desc">
-    <p>
-        Reset
-    </p>
-    <ul type="desc">
-        <li>
-            *{} seletor que serve para todos os elementos
-        </li>
-    <ul type="circle">
-        <li>
-            Margin:0;
-        </li>
-        <li>
-            Border-box;
-        </li>
-    </ul type="circle">
-        <li>
-            Box-sizing:
-        </li>
-    <ul type="circle">
-        <li>
-            Content-box;
-        </li>
-        <li>
-            Order-box;
-        </li> 
-    </ul type="circle">
-    </ul type="desc"></ul>
-    <p> 
-        Hover / Transition
-    </P>
-    <ul type="desc">
-        <li>
-            Hover - estado em que o cursor está em cima do elemento;
-        </li>
-    <ul type="circle">
-        <li>
-            Background;
-        </li>
-        <li>
-            Margin;
-        </li>
-    </ul type="circle">
-        <li>
-            Transition [s ou ms]- tempo para sair de um estado para outro;
-        </li>
-    </ul type="desc">
-    <p>
-        Display : Black, None, Inline, Inline-block, Flex, Grid
-    </p>
-    <ul type="desc">
-        <li>
-            Centralizar - DIV &gt display inline-block
-        </li>
-    <ul type="circle">
-        <li>
-            Margin: auto;
-        </li>
-    </ul type="circle">
-    </ul type="desc">
-    <p>
-        Position
-    </p>
-    <p>
-        Seletores +
-    </p>
-    <p>
-        Vídeos para reforçar a aula: 
-    </p>
-    <ol type="1">
-        <li> 
-            <a href="https://www.youtube.com/watch?v=LWU2OR19ZG4" target="_blank"> https://www.youtube.com/watch?v=LWU2OR19ZG4 </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=dPL23aVRIlc" target="_blank"> https://www.youtube.com/watch?v=dPL23aVRIlc </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=ahYHSBue7wE" target="_blank"> https://www.youtube.com/watch?v=ahYHSBue7wE</a>
-        </li>
-    </ol type="1">
+    <main>
 
-    <a target="_blank" href="../pdfs/Aula 6 [31.03.22] - cores margem hover.pdf"><input type="button" value="Imprimir"></a>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+
+        <h1>
+            Aula 6 - Margin, border, padding
+        </h1>
+
+        <iframe width="600" height="315" src="https://www.youtube.com/embed/tF98sV0bN-k" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <h2>
+            Resumo
+        </h2>
+
+        <p class="subtitulos">
+            CSS
+        </p>
+        <p>
+            Cores
+        </p>
+        <ul type="desc">
+            <li>
+                Rgb [red, green, blue] - 0 à 255
+            </li>
+            <ul type="circle">
+                <li>
+                    Rgb(10,50,30)
+                </li>
+            </ul type="circle">
+            <li>
+                Rgba [red, green, blue, alpha]
+            </li>
+            <ul type="circle">
+                <li>
+                    Alpha de 0 à 1 [transparência]
+                </li>
+            </ul type="circle">
+            <li>
+                Hexadecimais - [#] - 0 1 2 3 4 5 6 7 8 9 A B C D E F
+            </li>
+            <ul type="circle">
+                <li>
+                    Red - #800000
+                </li>
+                <li>
+                    Cinza - #323232
+                </li>
+            </ul type="circle">
+            <li>
+                Paleta de cores
+            </li>
+        </ul type="desc">
+        <p class="subtitulos">
+            Margen, border, padding
+        </p>
+        <ul type="desc">
+            <li>
+                Margin: 8px;
+            </li>
+            <ul type="circle">
+                <li>
+                    Margin-top: 20px;
+                </li>
+                <li>
+                    Margin-right: 8px;
+                </li>
+                <li>
+                    margin-bottom: 8px;
+                </li>
+                <li>
+                    Margin-left: 8px
+                </li>
+            </ul type="circle">
+            <li>
+                Margin: 8px [top, bottom] 10px[left, right];
+            </li>
+            <li>
+                Margin: 8px [top] 10px[left, right] 12px[bottom];
+            </li>
+            <li>
+                Margin: 8px [top] 10px[right] 12px[bottom] 14px[left];
+            </li>
+            <ul type="circle">
+                <li>
+                    Segue sentido horário
+                </li>
+            </ul type="circle">
+            <li>
+                Padding
+            </li>
+            <ul type="circle">
+                <li>
+                    Padding-top: 2%;
+                </li>
+                <li>
+                    Padding-right: 2%;
+                </li>
+                <li>
+                    Padding-bottom: 2%;
+                </li>
+                <li>
+                    Padding-left: 2%;
+                </li>
+            </ul type="circle">
+            <li>
+                Border-style - para ver os exemplos
+            </li>
+            <li>
+                Body &gt margin: 0;
+            </li>
+        </ul type="desc">
+        <img src="/aulaspdf/imgs-aulas/aula6/images.png">
+        <p class="subtitulos">
+            Comandos
+        </p>
+        <ul type="desc">
+            <li>
+                Shift + pgup [...]
+            </li>
+        </ul type="desc">
+        <p class="subtitulos">
+            Reset
+        </p>
+        <ul type="desc">
+            <li>
+                *{} seletor que serve para todos os elementos
+            </li>
+            <ul type="circle">
+                <li>
+                    Margin:0;
+                </li>
+                <li>
+                    Border-box;
+                </li>
+            </ul type="circle">
+            <li>
+                Box-sizing:
+            </li>
+            <ul type="circle">
+                <li>
+                    Content-box;
+                </li>
+                <li>
+                    Order-box;
+                </li>
+            </ul type="circle">
+        </ul type="desc">
+        </ul>
+        <p class="subtitulos">
+            Hover / Transition
+        </P>
+        <ul type="desc">
+            <li>
+                Hover - estado em que o cursor está em cima do elemento;
+            </li>
+            <ul type="circle">
+                <li>
+                    Background;
+                </li>
+                <li>
+                    Margin;
+                </li>
+            </ul type="circle">
+            <li>
+                Transition [s ou ms]- tempo para sair de um estado para outro;
+            </li>
+        </ul type="desc">
+        <p class="subtitulos">
+            Display : Black, None, Inline, Inline-block, Flex, Grid
+        </p>
+        <ul type="desc">
+            <li>
+                Centralizar - DIV &gt display inline-block
+            </li>
+            <ul type="circle">
+                <li>
+                    Margin: auto;
+                </li>
+            </ul type="circle">
+        </ul type="desc">
+        <p class="subtitulos">
+            Position
+        </p>
+        <ul>
+            <li>
+                Relative
+            </li>
+            <li>
+                Static
+            </li>
+            <li>
+                Absoluite
+            </li>
+            <li>
+                Fixed
+            </li>
+        </ul>
+        <p class="subtitulos">
+            Seletores +
+        </p>
+        <ul>
+            <li># para IDs</li>
+            <li>. para Class</li>
+        </ul>
+
+        <p class="subtitulos">
+            Vídeos para reforçar a aula:
+        </p>
+        <ol>
+            <li>
+                https://www.youtube.com/watch?v=LWU2OR19ZG4
+            </li>
+            <li>
+                https://www.youtube.com/watch?v=dPL23aVRIlc
+            </li>
+            <li>
+                https://www.youtube.com/watch?v=ahYHSBue7wE
+            </li>
+        </ol>
+
+        <div class="botao-container">
+            <a target="_blank" href="../pdfs/Aula 6 [31.03.22] - cores margem hover.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+            </a>
+            <a href="../desafios-aulas/desafio-aula6.html">
+                <button class="botao">
+                    Desafio
+                </button>
+            </a>
+        </div>
+    </main>
 
 </body>
+
 </html>
