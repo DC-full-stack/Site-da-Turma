@@ -9,3 +9,26 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+#central-box {
+    display: block;
+    width: 70%;
+    height: 70%;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

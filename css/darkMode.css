@@ -7,21 +7,30 @@ body.active {
   background-color: rgb(35, 31, 32);
 }
 
+.btn-box {
+  position: relative;
+  width: 480px;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .btn {
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(35, 31, 32);
   color: #fff;
   border-style: none;
-  margin: 1vh;
-  padding: 1vh;
+  /* margin: auto; */
+  /* padding: 1vh; */
   width: 11rem;
-  height: 50px;
+  height: 45px;
   border-radius: 60px;
   cursor: pointer;
-  transform: translate(-30.62rem, -7.5rem);
+  /* transform: translate(-30.62rem, -7.5rem); */
 }
 
 .btn.active {
