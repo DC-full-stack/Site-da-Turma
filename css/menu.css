@@ -20,14 +20,13 @@ input::placeholder {
     border: none;
     background: none;
     outline: none;
-    padding: 50px;
+    padding: 10px;
     color: #000000;
     font-size: 16px;
     line-height: 40px;
 }
 .search-btn {
-    width: 60px;
-    /* height: 40px; */
+    width: 50px;
     border-left: 1px solid #d7cdcd;
     display: flex;
     justify-content: center;

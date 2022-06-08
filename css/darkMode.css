@@ -24,13 +24,10 @@ body.active {
   background-color: rgb(35, 31, 32);
   color: #fff;
   border-style: none;
-  /* margin: auto; */
-  /* padding: 1vh; */
   width: 11rem;
   height: 45px;
   border-radius: 60px;
   cursor: pointer;
-  /* transform: translate(-30.62rem, -7.5rem); */
 }
 
 .btn.active {
