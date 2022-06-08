@@ -78,6 +78,63 @@ CSS da aba de navegação
 
 .module1__left-colum {
     width: 10rem;
+    background-color: rgba(0, 79, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator {
+    width: 55px;
+    height: 100%;
+    background: rgb(0,79,111);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    margin: 80px 30px;
+    position: absolute;
+}
+
+.navigator ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+.navigator ul li {
+    list-style: none;
+    height: 90%;
+}
+.navigator ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigator ul li a:hover {
+    width: 55px;
+    height: 55px;
+    background: rgb(233,108,31);
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    transform: scale(1.3);
+    transition: 0.2s ease-in-out;
+}
+
+/* .module1__left-colum {
+    width: 10rem;
     height: 100%;
     background-color: rgb(0, 79, 111);
     display: flex;
@@ -148,7 +205,7 @@ CSS da aba de navegação
 .navigator ul li a:hover,
 .navigator ul li a.active { 
     background-color: rgb(196, 83, 13);
-}
+} */
 
 /* =====================================================
 
