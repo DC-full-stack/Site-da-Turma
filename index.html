@@ -12,87 +12,86 @@
 </head>
 
 <body>
-          <div class="navigation">
-            <ul>
-                <li class="list">
-                    <a href="pages/sobre.html">
-                        <span > <ion-icon name="people-outline"></ion-icon> </span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="pages/modulo01.html">
-                        <span> 1 </span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="pages/erro404.html">
-                        <span> 2 </span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="pages/erro404.html">
-                        <span> 3 </span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="pages/erro404.html">
-                        <span> 4 </span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="pages/erro404.html">
-                        <span> <ion-icon name="beer-outline"></ion-icon> </span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
-        </div>    
+    <div id="central-box">
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      
-        <button class="btn">Darkmode</button>
+        <div id="btn">
+            <div class="btn-box">
+                <button class="btn">Darkmode</button>
+                <script>
         
-        <div class="search-box">
-            <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
-            <a href="" class="search-btn">
-              <img src="./icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
-            </a>
-          </div>
-      
-          <datalist id="options">
-            <option value="Sobre"></option>
-            <option value="Módulo 1"></option>
-            <option value="Módulo 2"></option>
-            <option value="Módulo 3"></option>
-            <option value="Módulo 4"></option>
-          </datalist>
-      
-
-        <script>
-          //     function darkMode() {
-          //           var element = document.body;
-          //           var content = document.getElementById("DarkModetext");
-          //           element.className = "dark-mode";
-          //           content.innerText = "Dark Mode is ON";
-          // }
-          //     function lightMode() {
-          //           var element = document.body;
-          //           var content = document.getElementById("DarkModetext");
-          //           element.className = "light-mode";
-          //           content.innerText = "Dark Mode is OFF";
-          // }
-
-
-          const btn = document.querySelector('.btn');
-          const body = document.querySelector('body');
+                    const btn = document.querySelector('button.btn');
+                    const body = document.querySelector('body');
+                    
+                    btn.onclick = function() {
+                      this.classList.toggle('active')
+                      body.classList.toggle('active')
+                    }
           
-          btn.onclick = function() {
-            this.classList.toggle('active')
-            body.classList.toggle('active')
-          }
+                </script>
+            </div>
 
-        </script>
-</body>
+        </div>
+
+        <div id="search">
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
+                <a href="" class="search-btn">
+                <img src="./icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
+                </a>
+            </div>
+    
+            <datalist id="options">
+                <option value="Sobre"></option>
+                <option value="Módulo 1"></option>
+                <option value="Módulo 2"></option>
+                <option value="Módulo 3"></option>
+                <option value="Módulo 4"></option>
+            </datalist>
+        </div>
+        
+        <div id="menu">
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="pages/sobre.html">
+                            <span > <ion-icon name="people-outline"></ion-icon> </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="pages/modulo01.html">
+                            <span> 1 </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="pages/erro404.html">
+                            <span> 2 </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="pages/erro404.html">
+                            <span> 3 </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="pages/erro404.html">
+                            <span> 4 </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="pages/erro404.html">
+                            <span> <ion-icon name="beer-outline"></ion-icon> </span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>    
+    
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          
+        </div>
+
+    </div>
+ </body>
 </html>
 
