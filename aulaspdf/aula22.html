@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 22 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
+</head>
+<body>
+    <header class="navigation">
+        <ul>
+            <li >
+                <a href="../index.html">
+                    <span > <ion-icon name="home-outline"></ion-icon> </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/sobre.html">
+                    <span > <ion-icon name="people-outline"></ion-icon> </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> <ion-icon name="beer-outline"></ion-icon> </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 22 - Manipulando Dom
+        </h1>
+        <div class="container-video"></div>
+            <iframe width="620" height="350" src="https://www.youtube.com/embed/WWZX8RWLxIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <div class="texto-container">
+            <p>
+                # Desafio jogo da velha
+            </p>
+            <p class="subtitulos">
+                DOM Document Object Model
+            </p>
+                <ul>
+                    <li> 
+                        O Document Object Model (DOM) é uma interface de programação para os
+                        documentos HTML e XML. Representa a página de forma que os programas
+                        possam alterar a estrutura do documento, alterar o estilo e conteúdo.
+                    </li>
+                    <li>
+                        Criado pelo browser
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Funções
+            </p>
+                <ul>
+                    <li>
+                        document.getElementsByName()
+                    </li>
+                    <li>
+                        document.getElementsByTagName('h1')
+                    </li>
+                    <li>
+                        document.getElementsByTagName('h1')[0] - usar o índice para localizar apenas um
+                        elemento
+                    </li>
+                    <li>
+                        document.getElementsByTagName('p').length - armazenando em uma variável
+                    </li>
+                    <li>
+                        let title = document.getElementsByTagName('h1')[0]
+                    </li>
+                    <li>
+                        title.innerHTML - retorna todo o texto e o html que existem no elemento
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Armazenando em uma variável
+            </p>
+                <ul>
+                    <li>
+                        let title = document.getElementsByTagName('h1')[0]
+                    </li>
+                    <li>
+                        title.innerHTML - retorna todo o texto e o html que existem no elemento
+                    </li>
+                </ul>
+            <div class="imagem">
+                <img src="imgs-aulas/aula22/WhatsApp Image 2022-06-02 at 14.44.54.jpeg">
+            </div>
+        </div>
+        <div class="botao-container">
+            <a target="_blank" href="../pdfs/Aula 22 [31.05.22] - manipula DOM.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+            <a target="_blank" href="">
+                <button class="botao">
+                    Desafio
+                </button>
+        </div>
+    </main>
+</body>
+<style>
+   h2 {
+    margin-top: 5%;
+   }
+   .imagem {
+       text-align: center;
+   }
+</style>
+</html>
