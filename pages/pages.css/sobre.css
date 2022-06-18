@@ -206,7 +206,7 @@ section {
     position:relative;
     border-radius:20px;
     margin: 10px;
-    transform: translate(10rem, 16rem);
+    transform: translate(5rem, 10rem);
 }
  
 .card {
