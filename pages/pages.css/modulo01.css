@@ -40,6 +40,23 @@ CSS do título (informações)
     margin: auto;
 }
 
+.contadorDeVisualizacoes {
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+}
+
+.contador {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    width: 70px;
+    margin-right: 10px;
+    height: 50px;
+    border: 2px solid black;
+}
+
 /* =====================================================
 
 Termina o CSS do título (informações)
