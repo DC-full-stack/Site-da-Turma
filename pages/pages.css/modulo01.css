@@ -117,11 +117,12 @@ main content
     width: 55vw;
     height: 100vh;
     background-color: white;
+    /* margin: 10px; */
     margin-right: 10px;
 }
 
 .module01__main-content-pdf {
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     /* text-align: center; */
     width: 70vw;
     display: flex;
