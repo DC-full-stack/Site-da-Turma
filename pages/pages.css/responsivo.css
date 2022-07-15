@@ -37,13 +37,12 @@ Para tablet
     ------------------------------- */
     .module01__main-content {
         width: 60vw;
-        /* margin-right: 10px; */
     }
     .module01__main-content-pdf {
         width: 58vw;
     }
+    
 }
-
 
 /* ====================================
 Para celular
@@ -52,5 +51,15 @@ Para celular
 @media only screen and (max-width: 585px) {
     .module1__resume_aside {
         display: none;
+    }
+    /* -------------------------------
+    main content
+    ------------------------------- */
+    .module01__main-content {
+        width: 95vw;
+        margin-right: 0;
+    }  
+    .module01__main-content-pdf {
+        width: 90vw;
     }
 }
