@@ -5,127 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 7</title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-         Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-    <h1> 
-        Aula 7 - Display
-    </h1>
+    <header class="navigation">
+        <ul>
+            <li >
+                <a href="../index.html">
+                    <span > <ion-icon name="home-outline"></ion-icon> </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/sobre.html">
+                    <span > <ion-icon name="people-outline"></ion-icon> </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li >
+                <a href="../pages/erro404.html">
+                    <span> <ion-icon name="beer-outline"></ion-icon> </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 7 - Display
+        </h1>
+        <div class="container-video">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/3oSIqIqzN3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yj9-N9BEVeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <p class="subtitulos">
+            CSS
+        </p>
+        <div class="texto-container">
+            <ul>
+                <li>
+                    &lt table &gt - Tabela - não se usa mais para posicionar elementos na tela
+                    display
+                </li>
+                <li>
+                    None - Remove um elemento da tela
+                </li>
+                    <ul>
+                        <li>
+                            Diferente de opacity: 0 [0~1]
+                        </li>
+                        <li>
+                            Nos sites de notícias pagas: inspeciona > apaga o opacity[?] e continua lendo
+                            a notícia [protegida]
+                        </li>
+                    </ul>
+                <li>
+                    Block - elemento se comporta como bloco
+                </li>
+                    <ul>
+                        <li>
+                            Div
+                        </li>
+                        <li>
+                            Article
+                        </li>
+                        <li>
+                            Header
+                        </li>
+                        <li>
+                            Footer
+                        </li>
+                        <li>
+                            H1 ~ H6
+                        </li>
+                        <li>
+                            P
+                        </li>
+                    </ul>
+                <li>
+                    Inline - Se comporta como texto
+                </li>
+                    <ul>
+                        <li>
+                            A
+                        </li>
+                        <li>
+                            Span - Trecho de texto genérico
+                        </li>
+                        <li>
+                            Img
+                        </li>
+                    </ul>
+                <li>
+                    Inline-block - bloco que permite bloco no lado
+                </li>
+                    <ul>
+                        <li>
+                            Button
+                        </li>
+                    </ul>
+            </ul>
+        </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yj9-N9BEVeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>
-        Resumo
-    </h2>
-    <p>
-        CSS
-    </p>
-    <ul type="desc">
-        <li>
-            &lt table &gt - Tabela - não se usa mais para posicionar elementos na tela
-            display
-        </li>
-        <li>
-            None - Remove um elemento da tela
-        </li>
-    <ul type="circle">
-        <li>
-            Diferente de opacity: 0 [0~1]
-        </li>
-        <li>
-            Nos sites de notícias pagas: inspeciona > apaga o opacity[?] e continua lendo
-            a notícia [protegida]
-        </li>
-    </ul type="circle">
-        <li>
-            Block - elemento se comporta como bloco
-        </li>
-    <ul type="circle">
-        <li>
-            Div
-        </li>
-        <li>
-            Article
-        </li>
-        <li>
-            Header
-        </li>
-        <li>
-            Footer
-        </li>
-        <li>
-            H1 ~ H6
-        </li>
-        <li>
-            P
-        </li>
-    </ul type="circle">
-        <li>
-            Inline - Se comporta como texto
-        </li>
-    <ul type="circle">
-        <li>
-            A
-        </li>
-        <li>
-            Span - Trecho de texto genérico
-        </li>
-        <li>
-            Img
-        </li>
-    </ul type="circle">
-        <li>
-            Inline-block - bloco que permite bloco no lado
-        </li>
-    <ul type="circle">
-        <li>
-            Button
-        </li>
-    </ul type="circle">
-    </ul type="desc">
-    <p>
-    Desafio
-    </p>    
-    <p>
-        Site evento música
-    </p>
-    <p>
-        Seção
-    </p>
-    <ol type="1">
-        <li>
-            Título
-        </li>
-        <li>
-            Falar sobre a venda de ingressos
-        </li>
-    <ul type="circle">
-        <li> 
-            Botão para site de vendas[comprar]
-        </li>
-    </ul type="circle">
-        <li>
-            Atrações
-        </li>
-    
-    <ul type="circle">
-        <li>
-            3 dias de eventos
-        </li>
-        <li>
-            Artistas
-        </li>
-    </ul type="circle">
-    </ol type="1">
-    
-    <a target="_blank" href="../pdfs/Aula 7 [05.04.22] - display.pdf"><input type="button" value="Imprimir"></a>
-    
+        <p class="subtitulos">
+        Desafio
+        </p>    
+        <p>
+            Site evento música
+        </p>
+        <p>
+            Seção
+        </p>
+        <ol type="1">
+            <li>
+                Título
+            </li>
+            <li>
+                Falar sobre a venda de ingressos
+            </li>
+                <ul>
+                    <li> 
+                        Botão para site de vendas[comprar]
+                    </li>
+                </ul>
+            <li>
+                Atrações
+            </li>
+                <ul>
+                    <li>
+                        3 dias de eventos
+                    </li>
+                    <li>
+                        Artistas
+                    </li>
+                </ul>
+        </ol type="1">
+    <div class="botao-container">
+        <a target="_blank" href="../pdfs/Aula 7 [05.04.22] - display.pdf">
+            <button class="botao">
+                Imprimir
+            </button>
+        </a>
+        <a href="../desafios-aulas/desafio-aula7.html">
+            <button class="botao">
+                Desafio
+            </button>
+        </a>
+    </div>  
+    </main>   
 </body>
 </html>
