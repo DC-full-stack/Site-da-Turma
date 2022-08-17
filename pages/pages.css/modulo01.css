@@ -69,8 +69,6 @@ left colum
     justify-content: center;
     align-items: center;
     border-radius: 21px;
-    /* margin: 80px 30px;
-    position: absolute; */
 }
 
 .navigator ul {
@@ -117,13 +115,11 @@ main content
     width: 55vw;
     height: 100vh;
     background-color: white;
-    /* margin: 10px; */
-    margin-right: 10px;
+    margin-right: 8px;
+    overflow: scroll;
 }
 
 .module01__main-content-pdf {
-    /* margin-left: 0.5rem; */
-    /* text-align: center; */
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -135,11 +131,11 @@ main content
 }
 
 .aula {
-    font-size: 20px;
+    font-size: 15px;
     color: #000000;
     padding: 10px;
     padding-left: 30px;
-    width: 95%;
+    width: 92%;
     border: 1px solid #000000;
 }
 /* =====================================================
