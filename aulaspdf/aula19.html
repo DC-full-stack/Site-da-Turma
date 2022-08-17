@@ -6,72 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Aula 19 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
 
+    <style>
+        .container-video {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-        Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-
-    <h1>
-        AULA 19
-
-    </h1>
-
-    <ul type="desc">
-        Para casa:
-        <li>
-            Ver nomenclatura de funções e variáveis
-        </li>
-    </ul>
-
-    <p>
-        Function
-    </p>
-
-    <p>
-        Parâmetros:
-    </p>
-    <img src="/aulaspdf/imgs-aulas/aula19/function soma.png" alt="">
-
-    <p>
-        Ex: Função que imprime nomes:
-    </p>
-    <img src="/aulaspdf/imgs-aulas/aula19/function exibeNomes.png" alt="">
-
-    <p>
-        Ex: Operações para testar no console do browser:
-    </p>
-    <img src="/aulaspdf/imgs-aulas/aula19/function cálculos.png" alt="">
-
-    <a target="_blank" href="../pdfs/Aula 19 [19.05.22] - exs functions.pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula:</h2>
-        <ul type="desc">
+    <header class="navigation">
+        <ul>
             <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=mc3TKp2XzhI">Funções - Curso JavaScript #16.</a> Por Curso em Vídeo
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                Por Programador a Bordo
-                    <ul type="desc">
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=sb_XEtwVsG0">Curso de JavaScript #3 - Functions parte 1/2 (2020)</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=IXGa5wwWraY">Curso de JavaScript #6 - Functions 2/2 (2020)</a>
-                        </li>
-                    </ul>
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=ItzRdMj1lzw">Curso JavaScript #23 - funções (function)</a> Por Matheus Battisti - Hora de Codar
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
         </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+
+        <h1>
+            Aula 19 - ex de funções
+        </h1>
+
+        <div class="container-video">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/mc3TKp2XzhI" title="Funções - Curso JavaScript #16" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/sb_XEtwVsG0" title="Curso de JavaScript #3 - Functions parte 1/2 (2020)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/IXGa5wwWraY" title="Curso de JavaScript #6 - Functions 2/2 (2020)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/ItzRdMj1lzw" title="Curso JavaScript #23 - funções (function)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="texto-container">
+            <p class="subtitulos">
+                Para casa:
+            </p>
+                <ul>
+                    <li>
+                        Ver nomenclatura de funções e variáveis
+                    </li>
+                </ul>
+    
+            <p class="subtitulos">
+                Function
+            </p>
+    
+            <p>
+                Parâmetros:
+            </p>
+            <img src="/aulaspdf/imgs-aulas/aula19/function soma.png" alt="" width="600">
+    
+            <p>
+                Ex: Função que imprime nomes:
+            </p>
+            <img src="/aulaspdf/imgs-aulas/aula19/function exibeNomes.png" alt="" width="600">
+    
+            <p>
+                Ex: Operações para testar no console do browser:
+            </p>
+            <img src="/aulaspdf/imgs-aulas/aula19/function cálculos.png" alt="" width="600"> <br><br>
+
+            <div class="botao-container">
+                <a target="_blank" href="../pdfs/Aula 19 [19.05.22] - exs functions.pdf">
+                    <button class="botao">
+                        Imprimir
+                    </button>
+                </a>
+                <a href="../desafios-aulas/desafio-aula19.html">
+                    <button class="botao">
+                        Desafio
+                    </button>
+                </a>
+            </div>
+
+        </div>
 
 </body>
 

@@ -1,163 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Aula 16 </title>
+    <title>Aula 16</title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
-<body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-        Prof. Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-    <h1>
-        Aula 16
-    </h1>
-    <ul type= "desc">
-        <li>
-            JS é case sensitive e fracamente tipado
-        </li>
-        <li>
-            sugestão para usar padrão camelCase
-        </li>
-    </ul>
 
-    <ul type= "desc">
-        Comandos
-            <li>
-                Typeof - ver o tipo da variável [typeof meuNome]
-                    <ul type= "desc">
-                        <li>
-                            No DevTools > console
-                        </li>
-                    </ul>
-            </li>
-            <li>
-                Console.log()
-            </li>
-    </ul>
-
-    <ul type= "desc">
-        Variáveis
-            <li>
-                [ES5] var local = ‘digital college’ [usar let]
-                    <ul type= "desc">
-                        <li>
-                            ECMAScript
-                        </li>
-                    </ul>
-            </li>
-            <li>
-                [ES6] let local = ‘digital college’
-            </li>
-    </ul>
-
-    <ul type= "desc">
-        Tipos de dados
-            <ul type= "desc">
-                <li>
-                    String
-                </li>
-                <li>
-                    Number
-                </li>
-                <li>
-                    Undefined
-                </li>
-                <li>
-                    Array = [1, 2, 3, 4]
-                </li>
-                    <ul type= "desc">
-                        <li>
-                            array[1] => 2  
-                        </li>
-                    </ul>
-                <li>
-                    Objeto = {nome: ‘Carlos’, idade: 31}
-                </li>
-                <li>
-                    Boolean => verdadeiro ou falso
-                </li>
-            </ul>
-    </ul>
-
-    <ul type= "desc">
-        Operadores
-            <ul type= "desc">
-                <li>
-                    + - / * % [resto] > >= !=
-                </li>
-                <li>
-                    x=10 “X recebe 10”
-                </li>
-                <li>
-                    x==10 “X igual a 10”
-                </li>
-                <li>
-                    x===10 “X idêntico a 10”
-                </li>
-                <li>
-                    x!=10 “X diferente de 10”
-                </li>
-                <li>
-                    && e [basta ter um falso para ser falso]
-                </li>
-                <li>
-                    || ou [basta ter um verdadeiro para ser verdadeiro]
-                </li>
-            </ul>
-    </ul type= "desc">
-
-    <ul type= "desc">
-        Condicionais
-            <li>
-                if (media >= 7) { <br>
-                    mensagem = 'aprovado'
-                    <br> } else if (media >= 5) {
-                    <br> mensagem = 'af'
-                    <br> } else {
-                    <br> mensagem = 'reprovado'
-                    }
-            </li>
-            <li>
-                Arrays
-            </li>
-            <li>
-                Loops
-            </li>
-    </ul>
-
-    <a target="_blank" href="../pdfs/Aula 16 [10.05.22] - inicia JavaScript.pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula:</h2>
-    <ul type= "desc">
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=Vbabsye7mWo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=9">Variáveis e Tipos Primitivos - Curso JavaScript #05</a> Por Curso em Vídeo
-        </li>
-        <li>
-            Operadores:
-            <ul type= "desc">
-                <li>
-                    <a target="_blank" href="https://www.youtube.com/watch?v=hZG9ODUdxHo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=12">Operadores (Parte1) - Curso JavaScript #07</a> Por Curso em Vídeo
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.youtube.com/watch?v=BP63NhITvao&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=13">Operadores (Parte 2) - Curso JavaScript #08</a> Por Curso em Vídeo
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=XdkW62tkAgU&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=30">Variáveis Compostas - Curso JavaScript #15</a> Por Curso em Vídeo
-        </li>
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=eX-lkN_Zahc&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=25">Repetições (Parte 2) - Curso JavaScript #14</a> Por Curso em Vídeo
-        </li>
-    </ul>
+    <style>
+        .container-video {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
     
+<body>
+    <header class="navigation">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+    
+        <h1>Aula 16 - Início do JavaScript</h1>
+
+        <div class="container-video">
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/Vbabsye7mWo?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Variáveis e Tipos Primitivos - Curso JavaScript #05" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/hZG9ODUdxHo?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Operadores (Parte1) - Curso JavaScript #07" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/BP63NhITvao?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Operadores (Parte 2) - Curso JavaScript #08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/XdkW62tkAgU?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Variáveis Compostas - Curso JavaScript #15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/5rZqYPKIwkY?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Repetições (Parte 1) - Curso JavaScript #13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/eX-lkN_Zahc?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Repetições (Parte 2) - Curso JavaScript #14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    
+        <h2>
+            Resumo
+        </h2>
+
+        <div class="texto-container">
+            <ul>
+                <li>
+                    JS é case sensitive e fracamente tipado
+                </li>
+                <li>
+                    sugestão para usar padrão camelCase
+                </li>
+            </ul>
+        
+            <p class="subtitulos">
+                Comandos
+            </p>
+                <ul>
+                    <li>
+                        Typeof - ver o tipo da variável [typeof meuNome]
+                        <ul>
+                            <li>
+                                No DevTools > console
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Console.log()
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Variáveis
+            </p>
+                <ul>
+                    <li>
+                        [ES5] var local = ‘digital college’ [usar let]
+                        <ul>
+                            <li>
+                                ECMAScript
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        [ES6] let local = ‘digital college’
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Tipos de dados
+            </p>  
+                <ul>
+                    <li>
+                        String
+                    </li>
+                    <li>
+                        Number
+                    </li>
+                    <li>
+                        Undefined
+                    </li>
+                    <li>
+                        Array = [1, 2, 3, 4]
+                    </li>
+                        <ul>
+                            <li>
+                                array[1] => 2
+                            </li>
+                        </ul>
+                    <li>
+                        Objeto = {nome: ‘Carlos’, idade: 31}
+                    </li>
+                    <li>
+                        Boolean => verdadeiro ou falso
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Operadores
+            </p>
+                <ul>
+                    <li>
+                        + - / * % [resto] > >= !=
+                    </li>
+                    <li>
+                        x=10 “X recebe 10”
+                    </li>
+                    <li>
+                        x==10 “X igual a 10”
+                    </li>
+                    <li>
+                        x===10 “X idêntico a 10”
+                    </li>
+                    <li>
+                        x!=10 “X diferente de 10”
+                    </li>
+                    <li>
+                        && e [basta ter um falso para ser falso]
+                    </li>
+                    <li>
+                        || ou [basta ter um verdadeiro para ser verdadeiro]
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Condicionais
+            </p>
+                <ul>
+                    <li>
+                        if (media >= 7) { <br>
+                        mensagem = 'aprovado'
+                        <br> } else if (media >= 5) {
+                        <br> mensagem = 'af'
+                        <br> } else {
+                        <br> mensagem = 'reprovado'
+                        }
+                    </li>
+                    <li>
+                        Arrays
+                    </li>
+                    <li>
+                        Loops
+                    </li>
+                </ul>
+            <div class="botao-container">
+                <a target="_blank" href="../pdfs/Aula 16 [10.05.22] - inicia JavaScript.pdf">
+                    <button class="botao">
+                        Imprimir
+                    </button>
+                </a>
+                <a href="../desafios-aulas/desafio-aula16.html">
+                    <button class="botao">
+                        Desafio
+                    </button>
+                </a>
+            </div> 
+        </div>
+    
+    </main>
+
 </body>
+
 </html>
