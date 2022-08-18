@@ -1,84 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Aula 17 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
+<style>
+    .container-video {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-        Prof. Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-
-    <h1>Aula 17</h1>
-
-    <p>
-        JS no HTML
-    </p>
-    <img src="imgs-aulas/aula17/scriptHTML.png" alt="">
-
-    <ul type= "desc">
-        Comandos
-        <li>
-            Alert('teste')
-        </li>
-        <li>
-            Console.log()
-        </li>
-        <li>
-            Array.is.Array(arr)
-        </li>
-        <li>
-            Arr.length - tamanho do array
-        </li>
-        <li>
-            Arr.push(1) - colocar elemento do array
-                <ul type= "desc">
-                    <li>
-                        Ou arr[3]
-                    </li>
-                </ul>
-        </li>
-        <li>
-            Arr.shift() - retira elemento do array
-        </li>
-    </ul>
-    <ul type= "desc">
-        Array - fila de elementos
-        <li>
-            Let arr = [1, 2, 3]
-        </li>
-    </ul>
-    <ul type= "desc">
-        Loop - estrutura de repetições         
+    <header class="navigation">
+        <ul>
             <li>
-                For
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
-                <ul type= "desc">
-                    <li>for(let i = 0; i &lt 10; i++) { }</li>
-                </ul>
-    </ul>
-    <img src="/aulaspdf/imgs-aulas/aula17/ArrayFor.png" alt="">
-<br>
-<br>
-    <a target="_blank" href="../pdfs/Aula 17 [12.05.22] - array loop for .pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula:</h2>    
-        <ul type= "desc">
             <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=XdkW62tkAgU">Variáveis Compostas - Curso JavaScript #15</a> Por Curso em Vídeo
-            </li> 
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
             <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=eX-lkN_Zahc">Repetições (Parte 2) - Curso JavaScript #14</a> Por Curso em Vídeo
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
         </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+
+        <h1>Aula 17 - Array e Loop (for)</h1>
+
+        <div class="container-video">
+            <iframe width="600" height="350" src="https://www.youtube.com/embed/XdkW62tkAgU?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Variáveis Compostas - Curso JavaScript #15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="350" src="https://www.youtube.com/embed/5rZqYPKIwkY?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Repetições (Parte 1) - Curso JavaScript #13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="350" src="https://www.youtube.com/embed/eX-lkN_Zahc?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="Repetições (Parte 2) - Curso JavaScript #14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h2>
+            Resumo
+        </h2>
+
+        <div class="texto-container">
+            <p class="subtitulos"> 
+                JS no HTML
+            </p>
+
+            <img src="imgs-aulas/aula17/scriptHTML.png" alt="" width="600">
+        
+            <p class="subtitulos">
+                Comandos
+            </p>
+                <ul>
+                    <li>
+                        Alert('teste')
+                    </li>
+                    <li>
+                        Console.log()
+                    </li>
+                    <li>
+                        Array.is.Array(arr)
+                    </li>
+                    <li>
+                        Arr.length - tamanho do array
+                    </li>
+                    <li>
+                        Arr.push(1) - colocar elemento do array
+                        <ul>
+                            <li>
+                                Ou arr[3]
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Arr.shift() - retira elemento do array
+                    </li>
+                </ul>
+
+            <p class="subtitulos">
+                Array - fila de elementos
+            </p>    
+                <ul>
+                    <li>
+                        Let arr = [1, 2, 3]
+                    </li>
+                </ul>
+            <p class="subtitulos">
+                Loop - estrutura de repetições
+            </p>    
+                <ul>
+                    <li>
+                        For
+                    </li>
+                    <ul>
+                        <li>for(let i = 0; i &lt 10; i++) { }</li>
+                    </ul>
+                </ul>
+                
+            <img src="/aulaspdf/imgs-aulas/aula17/ArrayFor.png" alt="" width="600",><br><br>
+
+            <div class="botao-container">
+                <a target="_blank" href="../pdfs/Aula 17 [12.05.22] - array loop for .pdf">
+                    <button class="botao">
+                        Imprimir
+                    </button>
+                </a>
+                <a href="../desafios-aulas/desafio-aula17.html">
+                    <button class="botao">
+                        Desafio
+                    </button>
+                </a>
+            </div> 
+        
+        </div>
+
+    </main>
 
 </body>
+
 </html>
