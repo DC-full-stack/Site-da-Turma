@@ -1,6 +1,6 @@
 
-// import { resumeClass } from "./resumeClasses";
-const resumeClass = [
+
+var resumeClass = [
     {
         title: 'introducao',
         content: [
@@ -170,43 +170,6 @@ const resumeClass = [
 
     },
 ]
-// ===============================================
-// atualiza hora
-// ===============================================
 
-    const horaAtual = new Date().toLocaleTimeString();
-    const dataAtual = new Date().toLocaleDateString();
-
-    document.getElementById("dataAtual").innerHTML = `Hora atual: ${horaAtual} do dia: ${dataAtual}`
-
-// ===============================================
-// renderiza Quadro lateral
-// ===============================================
-
-
-    let classes = document.querySelectorAll('.aula');
-    let classBoard = document.querySelector('.module01__main-content');
-    let content = document.querySelector('.update-board');
-    // import { resumeClass } from "./resumeClasses";
-
-    for (let i = 0; i < classes.length; i++) {
-        var iclass = classes[i];        
-        iclass.addEventListener('mouseover', () => {
-            // console.log(resumeClass[i].title);
-            content.innerHTML = `
-            <div class="module1__resume_board ">
-                <div class="resume-content">
-                    <ul class="resume">Aula ${i+2} () => { ${resumeClass[i].title} }</ul>
-                </div>
-            </div>
-            `
-        });
-    }
-
-    classBoard.addEventListener('mouseout', () => {
-        content.innerHTML = `
-        <div class="img-content">
-            <img class="resumeImg" src="../imgs/nick/resumeImg.jpg" alt="Site da Turma">
-        </div>
-        `
-    })
+// export default resumeClass;
+export {resumeClass};
