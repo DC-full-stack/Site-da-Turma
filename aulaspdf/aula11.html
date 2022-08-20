@@ -1,129 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AULA 11 </title>
+    <title> Aula 11 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-         Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-
-    <h1>Aula 11</h1>
-
-    <ul type="desc">
-        <li>
-            Q - "esc"
-        </li>
-    </ul>
-
-    <ul type="desc">
-        Git
+    <header class="navigation">
+        <ul>
             <li>
-                Git log - ver os commits feitos
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                Git reset - voltar para um estado anterior
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 11 - Comandos Git
+        </h1>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kB5e-gTAl_s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <div class="container-paginicio">
+            <ul type="desc">
+                <li>
+                    Q - "esc"
+                </li>
+            </ul>
+            <ul type="desc">
+                Git:
+                <li>
+                    Git log - ver os commits feitos
+                </li>
+                <li>
+                    Git reset - voltar para um estado anterior
                     <ul type="desc">
                         <li>
-                            <a target="_blank" href="https://www.w3schools.com/git/git_reset.asp?remote=github">https://www.w3schools.com/git/git_reset.asp?remote=github</a>
+                            <a target="_blank"
+                                href="https://www.w3schools.com/git/git_reset.asp?remote=github">https://www.w3schools.com/git/git_reset.asp?remote=github</a>
                         </li>
                     </ul>
-            </li>
-            <li>
-                Git diff ‘local’ - mostra as mudanças no local que se quer verificar
-            </li>
-            <li>
-                Git config –list - mostra as configurações salvas [email + nome]
-            </li>
-    </ul>
+                </li>
+                <li>
+                    Git diff ‘local’ - mostra as mudanças no local que se quer verificar
+                </li>
+                <li>
+                    Git config –list - mostra as configurações salvas [email + nome]
+                </li>
+            </ul>
 
-    <ul type="desc">
-        Atualiza dados
-            <li>
-                Git config --global reset.email "you@example.com" - atualiza email
-            </li>
-            <li>
-                Git config --global reset.name "name" - atualiza nome
-            </li>
-    </ul>
+            <ul type="desc">
+                Atualiza dados
+                <li>
+                    Git config --global reset.email "you@example.com" - atualiza email
+                </li>
+                <li>
+                    Git config --global reset.name "name" - atualiza nome
+                </li>
+            </ul>
 
-    <ul type="desc">
-        Sequência para commit [após modificações locais]
-            <li>
-                <b> Git init</b>
+            <ul type="desc">
+                Sequência para commit [após modificações locais]:
+                <li>
+                    <b> Git init</b>
                     <ul type="desc">
                         <li>
                             <b>Caso ainda não tenha iniciado o .git</b>
                         </li>
                     </ul>
-            </li>
-            <li>
-                <b>Git add .</b>
-            </li>
-            <li>
-                <b>Git commit -m "mensagem"</b>
-            </li>
-    </ul>
+                </li>
+                <li>
+                    <b>Git add .</b>
+                </li>
+                <li>
+                    <b>Git commit -m "mensagem"</b>
+                </li>
+            </ul>
 
-    <ul type="desc">
-        GitHub
-            <li>
-                Fork - fazer uma cópia particular
-            </li>
-            <li>
-                Issues - questões
-            </li>
-            <li>
-                Blame - ver histórico de commits [dentro do código]
-            </li>
-            <li>
-                Gist - arquivo de texto [para tutoriais]
-            </li>
-    </ul>
+            <ul type="desc">
+                GitHub:
+                <li>
+                    Fork - fazer uma cópia particular
+                </li>
+                <li>
+                    Issues - questões
+                </li>
+                <li>
+                    Blame - ver histórico de commits [dentro do código]
+                </li>
+                <li>
+                    Gist - arquivo de texto [para tutoriais]
+                </li>
+            </ul>
 
-    <ul type="desc">
-        Push para GitHub [após commit local]
-            <li>
-                <b>Git remote add origin https://github.com/nome-do-usuário/nome-do-repositório-.git</b>
-            </li>
-            <li>
-                <b>Git brach -M main</b>
-            </li>
-            <li>
-                <b>Git push -u origin main</b>
-            </li>
-    </ul>
+            <ul type="desc">
+                Push para GitHub [após commit local]
+                <li>
+                    <b> Git remote add origin https://github.com/nome-do-usuário/nome-do-repositório-.git </b>
+                </li>
+                <li>
+                    <b>Git brach -M main</b>
+                </li>
+                <li>
+                    <b>Git push -u origin main</b>
+                </li>
+            </ul>
 
-    <ul type="desc">
-        Para adicionar colaborador no GitHub
-            <li>
-                Pasta do repositório
-            </li>
-            <li>
-                Settings > collaborators > add people
-            </li>
-    </ul>
-
-    <a target="_blank" href="../pdfs/Aula 11 [19.04.22] - git + inicia github.pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula</h2>
-        <ul type="desc">
-            <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=DqTITcMq68k">O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2</a> Por Rafaella Ballerini
-            </li>
-            <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=UBAX-13g8OM">COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2</a> Por Rafaella Ballerini
-            </li>
+            <ul type="desc">
+                Para adicionar colaborador no GitHub
+                <li>
+                    Pasta do repositório
+                </li>
+                <li>
+                    Settings > collaborators > add people
+                </li>
+            </ul>
+            <h2>Vídeos referentes à aula</h2>
+            <ul type="desc">
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=DqTITcMq68k">O QUE É GIT E GITHUB? -
+                        definição e conceitos importantes 1/2</a> Por Rafaella Ballerini
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=UBAX-13g8OM">COMO USAR GIT E GITHUB NA
+                        PRÁTICA! - desde o primeiro commit até o pull request! 2/2</a> Por Rafaella Ballerini
+                </li>
+        </div>
+        <div class="botao-container">
+            <a target="_blank" href="../pdfs/Aula 11 [19.04.22] - git + inicia github.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+                <a target="_blank" href="../desafios-aulas/desafio-aula11.html">
+                    <button class="botao">
+                        Desafio
+                    </button>
+        </div>
         </ul>
-
+        </div>
+    </main>
 </body>
+
 </html>

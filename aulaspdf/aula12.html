@@ -1,109 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AULA 12 </title>
+    <title> Aula 12 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-         Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-
-    <h1>Aula 12</h1>
-
-    <ul type="desc">
-        Credenciais
+    <header class="navigation">
+        <ul>
             <li>
-                Windows > credenciais do windows > github > remover
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
-    </ul>
-
-    <ul type="desc">
-        No github
             <li>
-                ‘+’ > new organization > cria e add colega > add repositório
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
-    </ul>
-
-    <h2 style="font-family: Arial, Helvetica, sans-serif;">…or create a new repository on the command line</h2>
-    <p>Echo "# apaga" >> README.md</p>
-    <p>Git init</p>
-    <p>Git add README.md</p>
-    <p>Git commit -m "first commit"</p>
-    <p>Git branch -M main</p>
-    <p>Git remote add origin https://github.com/nome-do-usuário/nome-do-repositório</p>
-    <p>Git push -u origin main</p>
-
-    <h2 style="font-family: Arial, Helvetica, sans-serif;">…or push an existing repository from the command line</h2>
-    <p>Git remote add origin https://github.com/nome-do-usuário/nome-do-repositório</p>
-    <p>Git branch -M main</p>
-    <p>Git push -u origin main</p>
-
-    <ul type="desc">
-        Clonando e trabalhando com GIT BASH [na pasta de destino no seu computador]
             <li>
-                git clone “cola endereço”
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
             </li>
-        Se der conflito com um push anterior de outro colaborador [main|MERGING]
             <li>
-                Git pull
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 22 - Iniciando uma Branch
+        </h1>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EdZt0X0YrRc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <div class="texto-container">
+            <ul type="desc">
+                Credenciais:
+                <li>
+                    Windows > credenciais do windows > github > remover
+                </li>
+            </ul>
+
+            <ul type="desc">
+                No github:
+                <li>
+                    ‘+’ > new organization > cria e add colega > add repositório
+                </li>
+            </ul>
+
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color:black">…or create a new repository on the
+                command line</h2>
+            <p>Echo "# apaga" >> README.md</p>
+            <p>Git init</p>
+            <p>Git add README.md</p>
+            <p>Git commit -m "first commit"</p>
+            <p>Git branch -M main</p>
+            <p>Git remote add origin https://github.com/nome-do-usuário/nome-do-repositório</p>
+            <p>Git push -u origin main</p>
+
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color:black">…or push an existing repository from the
+                command line</h2>
+            <p>Git remote add origin https://github.com/nome-do-usuário/nome-do-repositório</p>
+            <p>Git branch -M main</p>
+            <p>Git push -u origin main</p>
+
+            <ul type="desc">
+                Clonando e trabalhando com GIT BASH [na pasta de destino no seu computador]
+                <li>
+                    Git clone “cola endereço”
+                </li>
+                Se der conflito com um push anterior de outro colaborador [main|MERGING]
+                <li>
+                    Git pull
                     <ul type="desc">
                         <li>
                             Conserta
                         </li>
                     </ul>
-            </li>
-            <li>
-                Git add .
-            </li>
-            <li>
-                Git commit -m "mensagem"
-            </li>
-            <li>
-                Git push
-            </li>
-    </ul>
+                </li>
+                <li>
+                    Git add .
+                </li>
+                <li>
+                    Git commit -m "mensagem"
+                </li>
+                <li>
+                    Git push
+                </li>
+            </ul>
 
-    <ul type="desc">
-        Branch
-            <li>
-                Depois de um clone: duas branch no mesmo commit [seu e do criador do repositório]
-            </li>
-            <li>
-                Git branch - lista das branch no seu projeto no momento
-            </li>
-            <li>
-                Git checkout -b nome-da-branch - cria nova branch
-            </li>
-            <li>
-                Git checkout nome-da-branch - para mudar para uma branch [que já exista]
+            <ul type="desc">
+                Branch
+                <li>
+                    Depois de um clone: duas branch no mesmo commit [seu e do criador do repositório]
+                </li>
+                <li>
+                    Git branch - lista das branch no seu projeto no momento
+                </li>
+                <li>
+                    Git checkout -b nome-da-branch - cria nova branch
+                </li>
+                <li>
+                    Git checkout nome-da-branch - para mudar para uma branch [que já exista]
                     <ul type="desc">
                         <li>
-                            mais sobre branch <a href="https://bityli.com/BMNuI">https://bityli.com/BMNuI</a>
+                            Mais sobre branch <a href="https://bityli.com/BMNuI">https://bityli.com/BMNuI</a>
                         </li>
                     </ul>
-            </li>
-    </ul>
-
-    <a target="_blank" href="../pdfs/Aula 12 [26.04.22] - inicia branch.pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula</h2>
-        <ul type="desc">
-            <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=DqTITcMq68k">O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2</a> Por Rafaella Ballerini
-            </li>
-            <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=UBAX-13g8OM">COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2</a> Por Rafaella Ballerini
-            </li>
-        </ul>
-
+                </li>
+            </ul>
+            <h2>Vídeos referentes à aula</h2>
+            <ul type="desc">
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=DqTITcMq68k">O QUE É GIT E GITHUB? -
+                        definição e conceitos importantes 1/2</a> Por Rafaella Ballerini
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=UBAX-13g8OM">COMO USAR GIT E GITHUB NA
+                        PRÁTICA! - desde o primeiro commit até o pull request! 2/2</a> Por Rafaella Ballerini
+                </li>
+            </ul>
+        </div>
+        <div class="botao-container">
+            <a target="_blank" href="..//pdfs/Aula 12 [26.04.22] - inicia branch.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+            </a>
+            <a href="../desafios-aulas/desafio-aula12.html">
+                <button class="botao">
+                    Desafio
+                </button>
+            </a>
+        </div>
+    </main>
 </body>
+
 </html>

@@ -1,72 +1,136 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Aula 03 </title>
-
+    <title> Aula 3 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-         Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-
-        <ul type= "desc">
-            Lembrar 
+    <header class="navigation">
+        <ul>
             <li>
-                Mandar vídeo sobre TCP/IP
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
         </ul>
-    
-        <ul type= "desc">
-            Links:
-            <li>
-                <a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank">Tags importantes HTML</a>
-            </li>
-            <li>
-                <a href="https://pt.wikihow.com/Criar-e-Apagar-Arquivos-de-Diret%C3%B3rios-Atrav%C3%A9s-do-Prompt-de-Comando" target="_blank">Alguns comandos cmd pra treinar</a>
-            </li>
-        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <ul type= "desc">
-            <li>
-                Portal do aluno 
-                <ul type= "desc">
-                    <li>
-                        <a href="https://portal.sponteeducacional.net.br/default.aspx?CID=72546" target="_blank">https://portal.sponteeducacional.net.br/default.aspx?CID=72546</a>
-                    </li>
-                    <li>
-                        CPF + CPF
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Site para usar quiz: <a href="https://www.sli.do/">Slido</a>        
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Deploy - implantar - colocar no ar alguma aplicação que teve seu desenvolvimento concluído <a href="https://kenzie.com.br/blog/o-que-e-deploy/" target="_blank">https://kenzie.com.br/blog/o-que-e-deploy/</a>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Modelo <b>OSI</b> Interconexão de sistemas abertos [7 camadas]
-                    <ul type= "desc">
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 3 - Modelos Portas IP Mascaras
+        </h1>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pZiIIXstC58"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <div class="texto-container">
+            <ul type="desc">
+                Lembrar
+                <li>
+                    Mandar vídeo sobre TCP/IP
+                </li>
+            </ul>
+            <ul type="desc">
+                Links:
+                <li>
+                    <a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" target="_blank">Tags importantes
+                        HTML</a>
+                </li>
+                <li>
+                    <a href="https://pt.wikihow.com/Criar-e-Apagar-Arquivos-de-Diret%C3%B3rios-Atrav%C3%A9s-do-Prompt-de-Comando"
+                        target="_blank">Alguns comandos cmd pra treinar</a>
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Portal do aluno
+                    <ul type="desc">
+                        <li>
+                            <a href="https://portal.sponteeducacional.net.br/default.aspx?CID=72546"
+                                target="_blank">https://portal.sponteeducacional.net.br/default.aspx?CID=72546</a>
+                        </li>
+                        <li>
+                            CPF + CPF
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Site para usar quiz: <a href="https://www.sli.do/">Slido</a>
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Deploy - implantar - colocar no ar alguma aplicação que teve seu desenvolvimento concluído <a
+                        href="https://kenzie.com.br/blog/o-que-e-deploy/"
+                        target="_blank">https://kenzie.com.br/blog/o-que-e-deploy/</a>
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Modelo <b>OSI</b> Interconexão de sistemas abertos [7 camadas]
+                    <ul type="desc">
                         <li>
                             Cada camada encapsula o dado antes de passar para a próxima camada
                         </li>
@@ -74,79 +138,81 @@
                             <a href="https://url.gratis/oDSDQo" target="_blank">https://url.gratis/oDSDQo</a>
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Padrão MVC - Model (Modelo) View (Visão) e Controller (Controle)
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Padrão MVC - Model (Modelo) View (Visão) e Controller (Controle)
+                    <ul type="desc">
                         <li>
-                            Facilita a troca de informações entre a interface do usuário aos dados no banco, fazendo com que as respostas sejam mais rápidas e dinâmicas;  
+                            Facilita a troca de informações entre a interface do usuário aos dados no banco, fazendo com
+                            que as respostas sejam mais rápidas e dinâmicas;
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Modelo <b>TCP/IP</b> - Transmission Control Protocol (Protocolo de Controle de Transmissão) e o IP, Internet Protocol (Protocolo de Internet).
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Modelo <b>TCP/IP</b> - Transmission Control Protocol (Protocolo de Controle de Transmissão) e o IP,
+                    Internet Protocol (Protocolo de Internet).
+                    <ul type="desc">
                         <li>
                             É o principal protocolo de envio e recebimento de dados MS internet.
                         </li>
                         <li>
                             Camada importante: Transporte
                         </li>
-                            <ul style="list-style-type: square;" type= "desc">
-                                <li>
-                                    Divide as informações que o servidor manda em pacotes para que congestione a rede o mínimo possível;
-                                </li>
-                            </ul>
+                        <ul style="list-style-type: square;" type="desc">
+                            <li>
+                                Divide as informações que o servidor manda em pacotes para que congestione a rede o
+                                mínimo possível;
+                            </li>
+                        </ul>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                IP, Máscaras e Gateway
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    IP, Máscaras e Gateway
+                    <ul type="desc">
                         <li>
                             Ver vídeo enviado no wpp
                         </li>
                         <li>
                             IP - formados por 4 números. cada número de 0 à 255 [ex:0.241.22.4]
                         </li>
-                            <ul style="list-style-type: square;" type= "desc">
-                                <li>
-                                    Cada parte é chamada de octeto
-                                </li>
-                            </ul>
+                        <ul style="list-style-type: square;" type="desc">
+                            <li>
+                                Cada parte é chamada de octeto
+                            </li>
+                        </ul>
                         <li>
                             <b>Máscara</b> segue o mesmo padrão do IP
                         </li>
-                            <ul style="list-style-type: square;" type= "desc">
-                                <li>
-                                    Determina um limite de quanto IP podem conter na rede
-                                </li>
-                                <li>
-                                    Determina qual parte do IP diz respeito a rede e qual parte diz respeito ao indivíduo?
-                                </li>
-                                <li>
-                                    <a href="https://blog.hosts.green/mascara-de-rede/" target="_blank">https://blog.hosts.green/mascara-de-rede/</a>
-                                </li>
-                                <li>
-                                    “Tem como finalidade mascarar uma parte do endereço IP. Sendo assim, todo endereço IP tem uma máscara correspondente, servindo para identificar qual parte do endereço é da rede e qual é a do host.”
-                                </li>
-                            </ul>
+                        <ul style="list-style-type: square;" type="desc">
+                            <li>
+                                Determina um limite de quanto IP podem conter na rede
+                            </li>
+                            <li>
+                                Determina qual parte do IP diz respeito a rede e qual parte diz respeito ao indivíduo?
+                            </li>
+                            <li>
+                                <a href="https://blog.hosts.green/mascara-de-rede/"
+                                    target="_blank">https://blog.hosts.green/mascara-de-rede/</a>
+                            </li>
+                            <li>
+                                “Tem como finalidade mascarar uma parte do endereço IP. Sendo assim, todo endereço IP
+                                tem uma máscara correspondente, servindo para identificar qual parte do endereço é da
+                                rede e qual é a do host.”
+                            </li>
+                        </ul>
                     </ul>
-            </li>
-        </ul>        
-
-        <ul type= "desc">
-            <li>
-                Portas - Port
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Portas - Port
+                    <ul type="desc">
                         <li>
                             Ponto de acesso para a transferência de dados.
                         </li>
@@ -160,30 +226,30 @@
                             HTTPs porta 443
                         </li>
                         <li>
-                            <a href="https://testarportasabertas.com.br/porta-8080-o-que-e-para-que-serve-e-como-funciona/" target="_blank">https://testarportasabertas.com.br/porta-8080-o-que-e-para-que-serve-e-como-funciona/</a>
+                            <a href="https://testarportasabertas.com.br/porta-8080-o-que-e-para-que-serve-e-como-funciona/"
+                                target="_blank">https://testarportasabertas.com.br/porta-8080-o-que-e-para-que-serve-e-como-funciona/</a>
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Requisitos HTTP
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Requisitos HTTP
+                    <ul type="desc">
                         <li>
                             São mensagens enviadas pelo cliente para iniciar uma ação no servidor.
                         </li>
                         <li>
-                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Messages" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Messages</a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Messages"
+                                target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Messages</a>
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Métodos HTTP
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Métodos HTTP
+                    <ul type="desc">
                         <li>
                             Responsável por indicar a ação a ser executada para um dado recurso.
                         </li>
@@ -209,16 +275,16 @@
                             *Outros
                         </li>
                         <li>
-                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods</a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods"
+                                target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods</a>
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Códigos de status de respostas HTTP
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Códigos de status de respostas HTTP
+                    <ul type="desc">
                         <li>
                             Respostas de informação [100 - 199]
                         </li>
@@ -235,16 +301,16 @@
                             Erros do servidor [500 -599]
                         </li>
                         <li>
-                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status</a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status"
+                                target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status</a>
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                Na prática
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Na prática
+                    <ul type="desc">
                         <li>
                             GitHub
                         </li>
@@ -255,13 +321,12 @@
                             Response: código HTML
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <ul type= "desc">
-            <li>
-                No VS CODE
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    No VS CODE
+                    <ul type="desc">
                         <li>
                             Index ou main - padrão indicando que o arquivo é o principal
                         </li>
@@ -274,47 +339,45 @@
                         <li>
                             Head cabeçalho
                         </li>
-                            <ul style="list-style-type: square;" type= "desc">
-                                <li>
-                                    Configurações do site
-                                </li>
-                            </ul>
+                        <ul style="list-style-type: square;" type="desc">
+                            <li>
+                                Configurações do site
+                            </li>
+                        </ul>
                         <li>
-                            Charset UTF 8 - caracteres especiais para o português [Ç ~ ´ pontuações etc]  
+                            Charset UTF 8 - caracteres especiais para o português [Ç ~ ´ pontuações etc]
                         </li>
                         <li>
-                            TAGs - representadas por &lt &gt   
+                            TAGs - representadas por &lt &gt
                         </li>
-                            <ul style="list-style-type: square;" type= "desc">
-                                <li>
-                                    Aspas representam o valor “ ”
-                                </li>
-                            </ul>
+                        <ul style="list-style-type: square;" type="desc">
+                            <li>
+                                Aspas representam o valor “ ”
+                            </li>
+                        </ul>
                         <li>
                             Body - visual da página
                         </li>
-                            <ul style="list-style-type: square;" type= "desc">
-                                <li>
-                                    H1 - título principal 
-                                </li>
-                                <li>
-                                    P - texto
-                                </li>
-                                <li>
-                                    Button - botão
-                                </li>
-                            </ul>
+                        <ul style="list-style-type: square;" type="desc">
+                            <li>
+                                H1 - título principal
+                            </li>
+                            <li>
+                                P - texto
+                            </li>
+                            <li>
+                                Button - botão
+                            </li>
+                        </ul>
                     </ul>
-            </li>
-        </ul>
-
-
-        <ul type= "desc">
-            <li>
-                Binário
-                    <ul type= "desc">
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Binário
+                    <ul type="desc">
                         <li>
-                            0 - 0 
+                            0 - 0
                         </li>
                         <li>
                             1 - 1
@@ -338,54 +401,20 @@
                             7 - 1000
                         </li>
                     </ul>
-            </li>
-        </ul>
-
-        <a target="_blank" href="../pdfs/Aula 3 [22.03.22] - modelos portas IP mascaras.pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula:</h2>
-
-        <ul type= "desc">
-            <li>
-                <a href="https://www.youtube.com/watch?v=G1a0qYwQZ2Q" target="_blank">COMO FAZER O DEPLOY DE UM PROJETO FRONT END (SUPER RÁPIDO!) (iniciantes).</a> Por Mayk Brito
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=KOrWZnGbx7s" target="_blank">Modelo OSI e TCP/IP.</a> Por Léo Matos
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=jyTNhT67ZyY" target="_blank">MVC // Dicionário do Programador.</a> Por Código Fonte TV
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=yLgansF_h1w" target="_blank">Redes 2 - IP, máscara de rede, gateway.</a> Por Paulo Kretcheu
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=SMU92puJxdU" target="_blank">O que são portas TCP e UDP?</a> Por Simplificando TI
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=CXzbUwK6lc8" target="_blank">Conceitos Essenciais: O Básico de HTTP.</a> Por Cod3r Cursos
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=jgmHbVkoh3g" target="_blank">Códigos de status HTTP 200, 301, 302, 400, 404, 500 e mais.</a> Por Aylton Inacio
-            </li>
-            <li>
-                GitHub
-                <ul type= "desc">
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=DqTITcMq68k" target="_blank">O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2</a> Por Rafaella Ballerini
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=UBAX-13g8OM" target="_blank">COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2</a> Por Rafaella Ballerini
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=hMAvQtQ97eE" target="_blank">Estrutura básica de um Documento HTML</a> Por Bóson Treinamentos
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=Y0dTHv65yxU" target="_blank">CÓDIGO BINÁRIO: APRENDA FÁCIL</a> Por ATECH-INFO
-            </li>
-        </ul>
-
+                </li>
+            </ul>
+        </div>
+            <div class="botao-container">
+                <a target="_blank" href="../pdfs/Aula 3 [22.03.22] - modelos portas IP mascaras.pdf">
+                    <button class="botao">
+                        Imprimir
+                    </button>
+                    <a target="_blank" href="../desafios-aulas/desafio-aula3.html">
+                        <button class="botao">
+                            Desafio
+                        </button>
+            </div>
+    </main>
 </body>
 
 </html>
