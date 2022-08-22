@@ -1,42 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 08</title>
+    <title> Aula 8 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-        Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-    <p>
-        Div !== Section 
-    </p>
+    <header class="navigation">
         <ul>
             <li>
-                Div não tem valor semântico
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                Section passa valor semântico 
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                Ir para o home
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
             </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 8 - Revisão
+        </h1>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FyOsoRALEG0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <div class="texto-container">
+            <ul>
+                <li>
+                    Div não tem valor semântico
+                </li>
+                <li>
+                    Section passa valor semântico
+                </li>
+                <li>
+                    Ir para o home
+                </li>
                 <ul>
                     <li>
                         &lta href="/"> &lta&gt
                     </li>
-                </ul> 
-            <li>
-                Button  
-            </li>
+                </ul>
+                <li>
+                    Button
+                </li>
                 <ul>
                     <li>
                         Interessante para formulários ou usando Javascrip
@@ -45,23 +109,35 @@
                         Para redirecionamento melhor usar TAG &lta&gt &lta&gt
                     </li>
                 </ul>
-        </ul>   
-    <p> 
-        Pesquisar
-    </p>
-        <ul>
-            <li>
-                Coloca resumo do seu site no &lthead&gt
-            </li>
-            <li>
-                Z-index 
-            </li>
-        </ul>
-    <img src="./imgs-aulas/aula8/img. aula 08.jpeg">
-    <p>
-        Exemplo de CSS aplicado apenas no <b><i>h1</i></b> da class <b><i>.text-wrap</i></b> da class <b><i>.main-header;</i></b>
-    </p>
-    
-    <a href="/pdfs/Aula 8 [07.04.22] - aula revisão .pdf"><input type="button" value="Imprimir"></a>
+            </ul>
+            <p>
+                Pesquisar
+            </p>
+            <ul>
+                <li>
+                    Coloca resumo do seu site no &lthead&gt
+                </li>
+                <li>
+                    Z-index
+                </li>
+            </ul>
+            <img src="./imgs-aulas/aula8/img. aula 08.jpeg">
+            <p>
+                Exemplo de CSS aplicado apenas no <b><i>h1</i></b> da class <b><i>.text-wrap</i></b> da class
+                <b><i>.main-header;</i></b>
+            </p>
+        </div>
+        <div class="botao-container">
+            <a target="_blank" href="../pdfs/Aula 8 [07.04.22] - aula revisão .pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+                <a target="_blank" href="../desafios-aulas/desafio-aula8.html">
+                    <button class="botao">
+                        Desafio
+                    </button>
+        </div>
+    </main>
 </body>
+
 </html>

@@ -1,172 +1,272 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Aula 5 </title>
-    </style>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
 
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-         Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-    <p>
-        CSS
-    </p>
-    <h1>Aula 5</h1>
-        <ul type="desc">
-            ID e Class
+    <header class="navigation">
+        <ul>
             <li>
-                “O atributo Id especifica uma identificação única para o elemento HTML.”
-                <ul type="desc">
-                    <li>
-                        Localiza com "#"
-                    </li>
-                </ul>
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                “O atributo global class especifica uma ou mais classes para o elemento HTML.”
-                <ul type="desc">
-                    <li>
-                        Localiza com "."
-                    </li>
-                </ul>
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
             <li>
-                Fonte: Alura 
-                <a href="https://bityli.com/OOmKm" target="_blank">https://bityli.com/OOmKm</a>
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
             </li>
         </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <p>
-        Explicação prática de ID e Class <br>
-        Vamos supor a seguinte folha CSS: <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/ID-Class.png" alt="">
-    </p>
-
-    <p>
-        Agora digamos que você tenha o seguinte arquivo HTML: <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/arquivoHTML.png" alt=""> <br>
-    </p>
-
-    <ul type="desc">
-        Explicação
-        <li>
-            Todos os elementos dessa página são da classe caixa então todos terão tamanho de 50 por 50.
-        </li>
-        <li>
-            O 1° elemento é uma combinação das classes caixa e azul então ele terá todas as propriedades de caixa e terá o fundo azul.
-        </li>
-        <li>
-            O 2° elemento é uma combinação das classes caixa e vermelho mesmo padrão do anterior.
-        </li>
-        <li>
-            O 3° elemento combina as classes caixa, azul e especial ele terá as propridades dos 2 elementos anteriores e uma borda verde da classe especial.
-        </li>
-        <li>
-            O 4° elemento é único pois ele possui um ID então só ele na página poderá ter as propriedades de super-especial mas mesmo assim ele terá todas as propriedades das classes caixa e vermelha.
-        </li>
-        <li>
-            Fonte
-            <a href="https://pt.stackoverflow.com/questions/11130/o-que-devo-usar-no-css-id-ou-class" target="_blanck">https://pt.stackoverflow.com/questions/11130/o-que-devo-usar-no-css-id-ou-class</a>
-        </li>
-    </ul>
-    
-    <ul type="desc">
-        Seletor {}
-        <li>
-            Seletor seleciona elementos dentro do CSS e diz as características;
-        </li>
-        <li style=" font-weight:bold;">
-            Seletor universal * {}
-        </li>
-        <li>
-            Quando mais de uma CSS atinge um elemento, o navegador dar prioridade à CSS mais específica;
-        </li>
-        <li style=" font-weight:bold;">
-            Comentário em CSS, JavaScript e PHP: /* */
-        </li>
-        <li style=" font-weight:bold;">
-            Comentário em HTML: &lt!–- --&gt
-        </li>
-    </ul>
-
-    <p>
-        Exemplo de aplicação de style [CSS] com seletores: <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/Explicação-seletores.png" alt="">
-    </p>
-    
-    <p>
-        Código: <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/código.png" alt="">
-    </p>
-
-    <p>
-        Desafio <br>
-        Navegador <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/desafio.png" alt="">
-    </p>
-
-    <p>
-        Código: <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/código-desafio-1.png" alt=""> <br>
-        <img src="../aulaspdf/imgs-aulas/aula5/código-desafio-2.png" alt="">
-    </p>
-
-    <ul type="desc">
-        Revisão da aula
-        <li>
-            Class
-        </li>
-        <li>
-            Id
-        </li>
-        <li>
-            Tag
-        </li>
-    </ul>
-
-    <ul type="desc">
-        Tag style
-        <li>
-            Color
-        </li>
-        <li>
-            Backcolor
-        </li>
-        <li>
-            Font-size
-        </li>
-        <li>
-            Border
-        </li>
-        <li>
-            Width
-        </li>
-    </ul>
-
-    <a target="_blank" href="../pdfs/Aula 5 [29.03.22] - id class seletores.pdf"><input type="button" value="Imprimir"></a>
-
-    <h2>Vídeos referentes à aula:</h2>
-    <ul>
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=r11FflkQqJs">Curso de CSS Para Completos Iniciantes. Por Felipe Rocha • dicasparadevs</a> 
-        </li>
-        <li>
-            <a target="_blank" href="https://www.youtube.com/watch?v=vwbegraDXD8">Curso de CSS para iniciantes - Aprenda CSS e cria um projeto. Por Matheus Battisti - Hora de Codar</a>
-        </li>
-    </ul>
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 5 -CSS
+        </h1>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zXfTjPrMC_0" title="YouTube video player"frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+        </div>
+        <h2>
+            Resumo
+        </h2>
+        <div class="texto-container">
+            <p class="subtitulos">
+                ID e Class
+            </p>
+            <ul type="desc">
+                <li>
+                    “O atributo Id especifica uma identificação única para o elemento HTML.”
+                    <ul type="desc">
+                        <li>
+                            Localiza com "#"
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    “O atributo global class especifica uma ou mais classes para o elemento HTML.”
+                    <ul type="desc">
+                        <li>
+                            Localiza com "."
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Fonte: Alura
+                    <a href="https://bityli.com/OOmKm" target="_blank">https://bityli.com/OOmKm</a>
+                </li>
+            </ul>
+            <p>
+                Explicação prática de ID e Class
+            </p>
+            <p>
+                Vamos supor a seguinte folha CSS:
+            </p>
+            <div class="imagem">
+                <img src="../aulaspdf/imgs-aulas/aula5/ID-Class.png" alt="">
+            </div>
+            <p>
+                Agora digamos que você tenha o seguinte arquivo HTML:
+            </p>
+            <div class="imagem">
+                <img src="../aulaspdf/imgs-aulas/aula5/arquivoHTML.png" alt="">
+            </div>
+            <p class="subtitulos">
+                Explicação
+            </p>
+            <ul type="desc">
+                <li>
+                    Todos os elementos dessa página são da classe caixa então todos terão tamanho de 50 por 50.
+                </li>
+                <li>
+                    O 1° elemento é uma combinação das classes caixa e azul então ele terá todas as propriedades de
+                    caixa e terá o fundo azul.
+                </li>
+                <li>
+                    O 2° elemento é uma combinação das classes caixa e vermelho mesmo padrão do anterior.
+                </li>
+                <li>
+                    O 3° elemento combina as classes caixa, azul e especial ele terá as propridades dos 2 elementos
+                    anteriores e uma borda verde da classe especial.
+                </li>
+                <li>
+                    O 4° elemento é único pois ele possui um ID então só ele na página poderá ter as propriedades de
+                    super-especial mas mesmo assim ele terá todas as propriedades das classes caixa e vermelha.
+                </li>
+                <li>
+                    Fonte
+                    <a href="https://pt.stackoverflow.com/questions/11130/o-que-devo-usar-no-css-id-ou-class"
+                        target="_blanck">https://pt.stackoverflow.com/questions/11130/o-que-devo-usar-no-css-id-ou-class</a>
+                </li>
+            </ul>
+            <p class="subtitulos">
+                Seletor {}
+            </p>
+            <ul type="desc">
+                <li>
+                    Seletor seleciona elementos dentro do CSS e diz as características;
+                </li>
+                <li style=" font-weight:bold;">
+                    Seletor universal * {}
+                </li>
+                <li>
+                    Quando mais de uma CSS atinge um elemento, o navegador dar prioridade à CSS mais específica;
+                </li>
+                <li style=" font-weight:bold;">
+                    Comentário em CSS, JavaScript e PHP: /* */
+                </li>
+                <li style=" font-weight:bold;">
+                    Comentário em HTML: &lt!–- --&gt
+                </li>
+            </ul>
+            <p class="subtitulos">
+                Exemplo de aplicação de style [CSS] com seletores:
+            </p>
+            <p>
+                Navegador:
+            </p>
+            <div class="imagem">
+                <img src="../aulaspdf/imgs-aulas/aula5/Explicação-seletores.png" alt="" width="450rem">
+            </div>
+            <p>
+                Código:
+            </p>
+            <div class="imagem">
+                <img src="../aulaspdf/imgs-aulas/aula5/código.png" alt="" width="450rem">
+            </div>
+            <p>
+                Desafio
+            </p>
+            <p>
+                Navegador
+            </p>
+            <div class="imagem">
+                <img src="../aulaspdf/imgs-aulas/aula5/desafio.png" alt="">
+            </div>
+            <p>
+                Código:
+            </p>
+            <img src="../aulaspdf/imgs-aulas/aula5/código-desafio-1.png" alt=""> <br>
+            <img src="../aulaspdf/imgs-aulas/aula5/código-desafio-2.png" alt="">
+            </p>
+            <p class="subtitulos">
+                Revisão da aula
+            </p>
+            <ul type="desc">
+                <li>
+                    Seletores
+                    <ul type="desc">
+                        <li>
+                            Class
+                        </li>
+                        <li>
+                            Id
+                        </li>
+                        <li>
+                            Tag
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul type="desc">
+                <li>
+                    Tag Style
+                    <ul type="desc">
+                        <li>
+                            Color
+                        </li>
+                        <li>
+                            Backcolor
+                        </li>
+                        <li>
+                            Font-size
+                        </li>
+                        <li>
+                            Border
+                        </li>
+                        <li>
+                            Width
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h2>
+            Vídeos referentes à aula:
+        </h2>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/watch?v=r11FflkQqJs">Curso de CSS Para Completos
+                    Iniciantes. Por Felipe Rocha • dicasparadevs</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/watch?v=vwbegraDXD8">Curso de CSS para iniciantes -
+                    Aprenda CSS e cria um projeto. Por Matheus Battisti - Hora de Codar</a>
+            </li>
+        </ul>
+    </div>
+        <div class="botao-container">
+            <a target="_blank" href="../pdfs/Aula 5 [29.03.22] - id class seletores.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+                <a target="_blank" href="../desafios-aulas/desafio-aula5.html">
+                    <button class="botao">
+                        Desafio
+                    </button>
+        </div>
+    </main>
 </body>
-
 <style>
     * {
         text-decoration: none;

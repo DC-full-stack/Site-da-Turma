@@ -1,53 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Aula 9 </title>
+    <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
+
 <body>
-    <p>
-        Digital College Fortaleza Ceará
-    </p>
-    <p>
-        Professor Carlos Marques
-    </p>
-    <p>
-        Resumo Jorge Mendonça
-    </p>
-    <h1> 
-        Aula 9 - Display Block e Flex
-    </h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cu-HP-gvggg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>
-        Formas de centralizar
-    </p>
-    <p>
-        Considerando HTML:
-    </p>
-        <img src="imgs-aulas/aula10/img1.jpeg">
-    <p>
-        Usando
-    </p>
-    <ol>
-        <li>
-            display: block;
-        </li>
-        <img src="imgs-aulas/aula10/img2.jpeg">
-        <li>
-            display: block;
-        </li>
-        <img src="imgs-aulas/aula10/img3.jpeg">
-        <li>
-            display: flex;
-        </li>
-        <img src="imgs-aulas/aula10/img4.jpeg">
-    </ol>
-    <a href="/pdfs/Aula 9 [12.04.22] - display block e flex.pdf">
-        <button>
-            Imprimir
-        </button>
-    </a>
+    <header class="navigation">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/sobre.html">
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/modulo01.html">
+                    <span> 1 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 2 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span> 4 </span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/erro404.html">
+                    <span>
+                        <ion-icon name="beer-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <main>
+        <div class="container-paginicio">
+            <p class="paginicio">
+                Digital College Fortaleza Ceará
+            </p>
+            <p class="paginicio">
+                Professor Carlos Marques
+            </p>
+            <p class="paginicio">
+                Resumo Jorge Mendonça
+            </p>
+        </div>
+        <h1>
+            Aula 9 - Display Block e Flex
+        </h1>
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/flCL0Y6yNJU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <p class="subtitulos">
+            Formas de centralizar
+        </p>
+        <p>
+            Considerando HTML:
+        </p>
+        <img src="imgs-aulas/aula10/img1.jpeg" alt="" width="450rem">
+        <p class="subtitulos">
+            Usando:
+        </p>
+        <ol>
+            <li>
+                display: block;
+            </li>
+            <img src="imgs-aulas/aula10/img2.jpeg" alt="" width="450rem">
+            <li>
+                display: block;
+            </li>
+            <img src="imgs-aulas/aula10/img3.jpeg" alt="" width="450rem">
+            <li>
+                display: flex;
+            </li>
+            <img src="imgs-aulas/aula10/img4.jpeg" alt="" width="450rem">
+        </ol>
+    </div>
+        <div class="botao-container">
+            <a target="_blank" href="../pdfs/Aula 9 [12.04.22] - display block e flex.pdf">
+                <button class="botao">
+                    Imprimir
+                </button>
+            </a>
+            <a href="../desafios-aulas/desafio-aula9.html">
+                <button class="botao">
+                    Desafio
+                </button>
+            </a>
+        </div>
+    </main>
 </body>
+
 </html>
