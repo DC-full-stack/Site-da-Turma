@@ -25,84 +25,84 @@ const resumeClass = [
     {
         title: 'id class seletores',
         content: [
-
+            'CSS', 'ID', 'Class', 'Seletores', '#', '.', 'Seletor universal', '(*)', 'Comentários', 'Color', 'Backgroundcolor', 'Font-size', 'Border', 'Width'
         ]
 
     },
     {
         title: 'cores margem hover',
         content: [
-
+            'CSS', 'Cores', 'RGB', 'RGBa', 'Hexadecimais', 'Paleta de cores', 'Border', 'Margin', 'Padding', 'shift + pgup [...]','Reset', 'Box-sizing', 'Border-box','Content-box', 'Order-box', 'Hover', 'Transition', 'Display', 'None', 'Block', 'Inline', 'Inline-block', 'Flex', 'Grid', 'Position'
         ]
 
     },    
     {
         title: 'display',
         content: [
-
+            'CSS', 'table', 'display' , 'none', 'block', 'Div', 'Article', 'Header', 'Footer', 'H1 ~ H6', 'P', 'inline', 'A', 'Span', 'Img', 'inline-block', 'button'
         ]
 
     },
     {
         title: 'aula revisão',
         content: [
-
+            'Div', 'Section', 'Button', 'A', 'Z-index'
         ]
 
     },
     {
         title: 'display block e flex',
         content: [
-
+            'Centralização', 'Display', 'Block', 'text-align: center;', 'Inline-block', 'Flex', 'Justify-content: center;'
         ]
 
     },
     {
         title: 'início de GIT',
         content: [
-
+            'Git', 'Github', 'Commit', 'Repositórios', 'ls', 'git', 'cd', 'cd ..', 'cd + tab tab', 'Ctrl + L', 'mkdir', 'code .', 'code ..', 'touch', 'rm', 'ls -la', 'git init', 'git status', 'git add', 'git add .', 'git commit -m', 'git config --global user.email', 'git config --global user.name', 'git diff'
         ]
 
     },
     {
         title: 'git + inicia github',
         content: [
-
+            'git', 'git log', 'git reset', 'git diff "local"', 'git config --list', 'git config --global reset.email', 'git config --global reset.name', 'git init', 'git add .', 'git commit -m', 'Github', 'fork', 'issues', 'blame', 'gist', 'git remote add origin "link"', 'git branch -M main', 'git push -u origin main'
         ]
 
     },
     {
         title: 'inicia branch',
         content: [
-
+            'Credenciais', 'Create repository', 'Push an existing repository', 'git clone', 'git pull', 'git add .', 'git commit -m', 'git push', 'git branch', 'git checkout -b', 'git checkout'
         ]
 
     },
     {
         title: 'checkout + merge git_github',
         content: [
-
+            'git branch -d', 'Alternar commits', 'git checkout "código do commit"', 'git checkout "nome-do-arquivo"', 'git checkout .', 'git branch', 'git checkout -b', 'git checkout', 'git add .', 'git commit -m', 'git push origin "branch"', 'git merge main', 'git push origin main'
         ]
 
     },
     {
         title: 'SCRUM',
         content: [
-
+            'VUCA', 'BANI', 'SCRUM', 'Princípios SCRUM', 'Manifesto ágil', 'Pilares do SCRUM', 'Papéis da metodologia', 'Eventos SCRUM', 'Artefatos', 'Priorização e estimativa'
         ]
 
     },
     {
         title: 'MVP lean thinking',
         content: [
-
+            'KANBAN', 'To do', 'Doing', 'Done', 'e-Kanban', 'Trello', 'Kanban tool', 'SCRUM', 'Épicos', 'Histórias', 'Lean Inception', 'Desingn thinking', 'MVP', 'Lean thinking'
         ]
 
     },
     {
         title: 'inicia JavaScript',
         content: [
-
+            'Javascript', 'Comados', 'Typeof', 'Console.log()', 'Variáveis', 'Tipos de dados', 'String', 'Number', 'Undefined', 'Array', 'Objeto', 'Null', 'Boolean', 'Operadores', '+, -, /, *, %' , '=, ==, ===', '!=, !==, !===,', '&&, ||', 'Condicionais' , 'Array', 'Loop'
         ]
 
     },
