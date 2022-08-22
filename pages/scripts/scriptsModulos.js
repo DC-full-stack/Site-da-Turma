@@ -4,21 +4,21 @@ const resumeClass = [
     {
         title: 'introducao',
         content: [
-
+            'Github', 'Git', 'W3school', 'W3C', 'Developed', 'Mozilla' , 'MDN', 'Web', 'Docs', 'Hackathon', 'UI', 'UX', 'criador', 'designer', 'CAN I USE', 'FIGMA', 'HTTPS', 'DNS', 'IP', 'Cmd', 'Dir', 'windows', 'linux' , 'apple', 'cd', 'code .', 'Ipconfig' ,'gateway', 'developed', 'tools', 'domain'
         ]
 
     },
     {
         title: 'modelos portas IP mascaras',
         content: [
-
+            'Slido', 'Deploy', 'Modelo', 'OSI', 'Padrão MVC', 'Model', 'View', 'Controller ','TCP/IP', 'transmission', 'Control', 'Protocol IP', 'Internet Protocol','Máscaras e Gateway', 'Portas', 'HTTPs', 'Get', 'Post', 'Put', 'Delete', 'Options ','Patch', 'Códigos de status de respostas HTTP', 'Response', 'Charset', 'UTF 8',  'TAGs', 'body',  'H1',  'P',  'Button',  'Binário'
         ]
 
     },
     {
         title: 'tags iniciais',
         content: [
-
+            'Indentação', 'SEO', 'Lorem', 'P', 'H1', 'h2',' img - imagem', 'src', 'Acessibilidade', 'Width', 'anchor', 'Target', 'blank', 'Head' ,'cabeçalho' ,'configurações' ,'Body' ,'Autocomplete' 
         ]
 
     },
@@ -170,18 +170,18 @@ const resumeClass = [
 
     },
 ]
-// ===============================================
+// ============================================================================
 // atualiza hora
-// ===============================================
+// ============================================================================
 
     const horaAtual = new Date().toLocaleTimeString();
     const dataAtual = new Date().toLocaleDateString();
 
     document.getElementById("dataAtual").innerHTML = `Hora atual: ${horaAtual} do dia: ${dataAtual}`
 
-// ===============================================
+// ============================================================================
 // renderiza Quadro lateral
-// ===============================================
+// ============================================================================
 
 
     let classes = document.querySelectorAll('.aula');
@@ -189,19 +189,46 @@ const resumeClass = [
     let content = document.querySelector('.update-board');
     // import { resumeClass } from "./resumeClasses";
 
+// ============================================================================
+    // const contentRender = (i) => {
+    //     for (let j = 0; j < resumeClass[i].content.length; j++) {
+    //         return resumeClass[i].content[j];
+    //         // console.log(resumeClass[i].content[j]);
+    //     }
+            
+
+    //                 // return resumeClass[i].content
+
+
+    //         // resumeClass[i].content.forEach(function(element) {
+    //         //     return element.value
+    //         // });
+
+        
+    // }
+// ============================================================================
+
     for (let i = 0; i < classes.length; i++) {
         var iclass = classes[i];        
         iclass.addEventListener('mouseover', () => {
-            // console.log(resumeClass[i].title);
             content.innerHTML = `
             <div class="module1__resume_board ">
+                <div class="resume-title">
+                    <ul class="resume">const Aula${i+2} = () => { ${resumeClass[i].title} }</ul>
+                </div>
                 <div class="resume-content">
-                    <ul class="resume">Aula ${i+2} () => { ${resumeClass[i].title} }</ul>
+                    <p >palavras chaves da aula:  [ 
+                        <br> <br>
+                        ${resumeClass[i].content} 
+                        <br> <br>
+                        ]
+                    </p>
                 </div>
             </div>
             `
         });
     }
+
 
     classBoard.addEventListener('mouseout', () => {
         content.innerHTML = `
