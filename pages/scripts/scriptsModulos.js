@@ -25,7 +25,7 @@ const resumeClass = [
     {
         title: 'id class seletores',
         content: [
-            'CSS', 'ID', 'Class', 'Seletores', '#', '.', 'Seletor universal', '(*)', 'Comentários', 'Color', 'Backgroundcolor', 'Font-size', 'Border', 'Width'
+            'CSS', 'ID', 'Class', 'Seletores', '#, . , (*)', 'Seletor universal', 'Comentários', 'Color', 'Backgroundcolor', 'Font-size', 'Border', 'Width'
         ]
 
     },
@@ -102,70 +102,70 @@ const resumeClass = [
     {
         title: 'inicia JavaScript',
         content: [
-            'Javascript', 'Comados', 'Typeof', 'Console.log()', 'Variáveis', 'Tipos de dados', 'String', 'Number', 'Undefined', 'Array', 'Objeto', 'Null', 'Boolean', 'Operadores', '+, -, /, *, %' , '=, ==, ===', '!=, !==, !===,', '&&, ||', 'Condicionais' , 'Array', 'Loop'
+            'Javascript', 'Comados', 'Typeof', 'Console.log()', 'Variáveis', 'Tipos de dados', 'String', 'Number', 'Undefined', 'Array', 'Objeto', 'Null', 'Boolean', 'Operadores', '+, -, /, *, %, =, ==, ===, !=, !==, !===, &&, ||', 'Condicionais' , 'Array', 'Loop'
         ]
 
     },
     {
         title: 'array loop for',
         content: [
-
+            'Array', 'Loop (for)', 'alert', 'length', 'push', 'shift', 'fila'
         ]
 
     },
     {
         title: ' exs + funções',
         content: [
-
+            'FOR (Loop)', 'exemplos de utilização', 'total de vendas', 'comissao', 'template strings', 'functions'
         ]
 
     },
     {
         title: 'exs functions',
         content: [
-
+            'functions', 'parametros', 'operações', 
         ]
 
     },
     {
         title: 'objeto',
         content: [
-
+            'acessar um elemento específico', 'Exercício'
         ]
 
     },
     {
         title: 'objeto, função e interação do JS com o navegador',
         content: [
-
+            'objeto', 'Forma de acessar um elemento dentro do objeto', 'Declaração', 'chamada de função', 'DevTools'
         ]
 
     },
     {
         title: 'manipula DOM',
         content: [
-
+            'DOM ', 'Document Object Model', 'browser', 'getElementsByName()', 'getElementsByTagName()', 'innerHTML'
         ]
 
     },
     {
         title: 'revisão array.for.function',
         content: [
-
+            'aula de revisão', 'array', 'for' ,  'function'
         ]
 
     },
     {
         title: 'eventos em JS',
         content: [
-
+            'orientado a eventos', 'addEventListener()', 'click', 'innerHTML'
         ]
 
     },
     {
         title: 'inicia jogo da velha',
         content: [
-
+            'inicia programa do jogo da velha', 'content', 'square', 'currentPlayer'
         ]
 
     },
