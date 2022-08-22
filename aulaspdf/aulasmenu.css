@@ -52,3 +52,35 @@
     transform: scale(1.3);
     transition: 0.2s ease-in-out;
 }
+
+@media (width: 320px) {
+    .navigation {
+        width: 324px;
+    }
+
+    .navigation ul {
+        margin-top: 10%;
+    }
+}
+
+@media (width: 375px) {
+    .navigation {
+        width: 605px;
+    }
+
+    .navigation ul li a {
+        margin-top: 5%;
+        font-size: 30px;
+    }
+}
+
+@media (width: 425px) {
+    .navigation {
+        width: 606px;
+    }
+
+    .navigation ul li a {
+        margin-top: 5%;
+        font-size: 30px;
+    }
+}
