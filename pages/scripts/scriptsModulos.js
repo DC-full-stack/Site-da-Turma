@@ -4,21 +4,21 @@ const resumeClass = [
     {
         title: 'introducao',
         content: [
-            'Github', 'Git', 'W3school', 'W3C', 'Developed', 'Mozilla' , 'MDN', 'Web', 'Docs', 'Hackathon', 'UI', 'UX', 'criador', 'designer', 'CAN I USE', 'FIGMA', 'HTTPS', 'DNS', 'IP', 'Cmd', 'Dir', 'windows', 'linux' , 'apple', 'cd', 'code .', 'Ipconfig' ,'gateway', 'developed', 'tools', 'domain'
+            'Github', 'Git', 'W3school', 'W3C', 'Developed', 'Mozilla', 'MDN', 'Web', 'Docs', 'Hackathon', 'UI', 'UX', 'criador', 'designer', 'CAN I USE', 'FIGMA', 'HTTPS', 'DNS', 'IP', 'Cmd', 'Dir', 'windows', 'linux', 'apple', 'cd', 'code .', 'Ipconfig', 'gateway', 'developed', 'tools', 'domain'
         ]
 
     },
     {
         title: 'modelos portas IP mascaras',
         content: [
-            'Slido', 'Deploy', 'Modelo', 'OSI', 'Padrão MVC', 'Model', 'View', 'Controller ','TCP/IP', 'transmission', 'Control', 'Protocol IP', 'Internet Protocol','Máscaras e Gateway', 'Portas', 'HTTPs', 'Get', 'Post', 'Put', 'Delete', 'Options ','Patch', 'Códigos de status de respostas HTTP', 'Response', 'Charset', 'UTF 8',  'TAGs', 'body',  'H1',  'P',  'Button',  'Binário'
+            'Slido', 'Deploy', 'Modelo', 'OSI', 'Padrão MVC', 'Model', 'View', 'Controller ', 'TCP/IP', 'transmission', 'Control', 'Protocol IP', 'Internet Protocol', 'Máscaras e Gateway', 'Portas', 'HTTPs', 'Get', 'Post', 'Put', 'Delete', 'Options ', 'Patch', 'Códigos de status de respostas HTTP', 'Response', 'Charset', 'UTF 8', 'TAGs', 'body', 'H1', 'P', 'Button', 'Binário'
         ]
 
     },
     {
         title: 'tags iniciais',
         content: [
-            'Indentação', 'SEO', 'Lorem', 'P', 'H1', 'h2',' img - imagem', 'src', 'Acessibilidade', 'Width', 'anchor', 'Target', 'blank', 'Head' ,'cabeçalho' ,'configurações' ,'Body' ,'Autocomplete' 
+            'Indentação', 'SEO', 'Lorem', 'P', 'H1', 'h2', ' img - imagem', 'src', 'Acessibilidade', 'Width', 'anchor', 'Target', 'blank', 'Head', 'cabeçalho', 'configurações', 'Body', 'Autocomplete'
         ]
 
     },
@@ -32,14 +32,14 @@ const resumeClass = [
     {
         title: 'cores margem hover',
         content: [
-            'CSS', 'Cores', 'RGB', 'RGBa', 'Hexadecimais', 'Paleta de cores', 'Border', 'Margin', 'Padding', 'shift + pgup [...]','Reset', 'Box-sizing', 'Border-box','Content-box', 'Order-box', 'Hover', 'Transition', 'Display', 'None', 'Block', 'Inline', 'Inline-block', 'Flex', 'Grid', 'Position'
+            'CSS', 'Cores', 'RGB', 'RGBa', 'Hexadecimais', 'Paleta de cores', 'Border', 'Margin', 'Padding', 'shift + pgup [...]', 'Reset', 'Box-sizing', 'Border-box', 'Content-box', 'Order-box', 'Hover', 'Transition', 'Display', 'None', 'Block', 'Inline', 'Inline-block', 'Flex', 'Grid', 'Position'
         ]
 
-    },    
+    },
     {
         title: 'display',
         content: [
-            'CSS', 'table', 'display' , 'none', 'block', 'Div', 'Article', 'Header', 'Footer', 'H1 ~ H6', 'P', 'inline', 'A', 'Span', 'Img', 'inline-block', 'button'
+            'CSS', 'table', 'display', 'none', 'block', 'Div', 'Article', 'Header', 'Footer', 'H1 ~ H6', 'P', 'inline', 'A', 'Span', 'Img', 'inline-block', 'button'
         ]
 
     },
@@ -102,7 +102,7 @@ const resumeClass = [
     {
         title: 'inicia JavaScript',
         content: [
-            'Javascript', 'Comados', 'Typeof', 'Console.log()', 'Variáveis', 'Tipos de dados', 'String', 'Number', 'Undefined', 'Array', 'Objeto', 'Null', 'Boolean', 'Operadores', '+, -, /, *, %, =, ==, ===, !=, !==, !===, &&, ||', 'Condicionais' , 'Array', 'Loop'
+            'Javascript', 'Comados', 'Typeof', 'Console.log()', 'Variáveis', 'Tipos de dados', 'String', 'Number', 'Undefined', 'Array', 'Objeto', 'Null', 'Boolean', 'Operadores', '+, -, /, *, %, =, ==, ===, !=, !==, !===, &&, ||', 'Condicionais', 'Array', 'Loop'
         ]
 
     },
@@ -123,7 +123,7 @@ const resumeClass = [
     {
         title: 'exs functions',
         content: [
-            'functions', 'parametros', 'operações', 
+            'functions', 'parametros', 'operações',
         ]
 
     },
@@ -151,7 +151,7 @@ const resumeClass = [
     {
         title: 'revisão array.for.function',
         content: [
-            'aula de revisão', 'array', 'for' ,  'function'
+            'aula de revisão', 'array', 'for', 'function'
         ]
 
     },
@@ -174,47 +174,69 @@ const resumeClass = [
 // atualiza hora
 // ============================================================================
 
-    const horaAtual = new Date().toLocaleTimeString();
-    const dataAtual = new Date().toLocaleDateString();
+function relogio() {
 
-    document.getElementById("dataAtual").innerHTML = `Hora atual: ${horaAtual} do dia: ${dataAtual}`
+    let data = new Date();
+    let hor = data.getHours();
+    let min = data.getMinutes();
+    let seg = data.getSeconds();
+
+    if (hor < 10) {
+        hor = "0" + hor
+    }
+    if (min < 10) {
+        min = "0" + min
+    }
+    if (seg < 10) {
+        seg = "0" + seg
+    }
+
+    let horas = hor + ":" + min + ":" + seg;
+    document.getElementById('horaAtual').innerHTML = horas;
+}
+
+let tempo = setInterval(relogio, 1000)
+
+const dataAtual = new Date().toLocaleDateString();
+
+document.getElementById("dataAtual").innerHTML = `do dia: ${dataAtual}`
 
 // ============================================================================
 // renderiza Quadro lateral
 // ============================================================================
 
 
-    let classes = document.querySelectorAll('.aula');
-    let classBoard = document.querySelector('.module01__main-content');
-    let content = document.querySelector('.update-board');
-    // import { resumeClass } from "./resumeClasses";
+let classes = document.querySelectorAll('.aula');
+let classBoard = document.querySelector('.module01__main-content');
+let content = document.querySelector('.update-board');
+// import { resumeClass } from "./resumeClasses";
 
 // ============================================================================
-    // const contentRender = (i) => {
-    //     for (let j = 0; j < resumeClass[i].content.length; j++) {
-    //         return resumeClass[i].content[j];
-    //         // console.log(resumeClass[i].content[j]);
-    //     }
-            
-
-    //                 // return resumeClass[i].content
+// const contentRender = (i) => {
+//     for (let j = 0; j < resumeClass[i].content.length; j++) {
+//         return resumeClass[i].content[j];
+//         // console.log(resumeClass[i].content[j]);
+//     }
 
 
-    //         // resumeClass[i].content.forEach(function(element) {
-    //         //     return element.value
-    //         // });
+//                 // return resumeClass[i].content
 
-        
-    // }
+
+//         // resumeClass[i].content.forEach(function(element) {
+//         //     return element.value
+//         // });
+
+
+// }
 // ============================================================================
 
-    for (let i = 0; i < classes.length; i++) {
-        var iclass = classes[i];        
-        iclass.addEventListener('mouseover', () => {
-            content.innerHTML = `
+for (let i = 0; i < classes.length; i++) {
+    var iclass = classes[i];
+    iclass.addEventListener('mouseover', () => {
+        content.innerHTML = `
             <div class="module1__resume_board ">
                 <div class="resume-title">
-                    <ul class="resume">const Aula${i+2} = () => { ${resumeClass[i].title} }</ul>
+                    <ul class="resume">const Aula${i + 2} = () => { ${resumeClass[i].title} }</ul>
                 </div>
                 <div class="resume-content">
                     <p >palavras chaves da aula:  [ 
@@ -226,14 +248,14 @@ const resumeClass = [
                 </div>
             </div>
             `
-        });
-    }
+    });
+}
 
 
-    classBoard.addEventListener('mouseout', () => {
-        content.innerHTML = `
+classBoard.addEventListener('mouseout', () => {
+    content.innerHTML = `
         <div class="img-content">
             <img class="resumeImg" src="../imgs/nick/resumeImg.jpg" alt="Site da Turma">
         </div>
         `
-    })
+})
