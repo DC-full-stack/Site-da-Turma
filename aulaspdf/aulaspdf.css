@@ -2,7 +2,6 @@
 * {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    /*height: 100%*/
 }
 
 body {
@@ -13,7 +12,7 @@ main {
     text-align: justify;
     background-color: #fff;
     border-radius: 20px;
-    width: 700px;
+    max-width: 700px;
     padding: 3%;
     margin: auto;
 }
@@ -37,7 +36,6 @@ h1 {
 .container-video {
     display: flex;
     justify-content: center;
-    padding-right: 0px;
     margin-bottom: 5%;
 }
 
@@ -47,7 +45,6 @@ h2 {
 }
 
 .texto-container {
-    padding-left: 0px;
     padding-bottom: 3%;
 }
 
@@ -96,83 +93,4 @@ li {
     width: 150px;
     font: bold 15px arial, sans-serif;
     text-shadow:none;
-}
-
-@media (width: 320px) {
-    main {
-        width: 324px;
-    }
-
-    ul {
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    li {
-        list-style: none;
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-}
-
-@media (width: 375px) {
-    main {
-        width: 610px;
-    }
-
-    .container-paginicio .paginicio {
-        font-size: 25px;
-    }
-
-    .subtitulos {
-        font-size: 25px;
-    }
-
-    main ul {
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    main ul li {
-        list-style: none;
-        font-size: 25px;
-        margin-bottom: 15px;
-    }
-
-    .botao {
-        width: 250px;
-        height: 80px;
-        font-size: 20px;
-    }
-}
-
-@media (width: 425px) {
-    main {
-        width: 610px;
-    }
-
-    .container-paginicio .paginicio {
-        font-size: 25px;
-    }
-
-    .subtitulos {
-        font-size: 25px;
-    }
-
-    main ul {
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    main ul li {
-        list-style: none;
-        font-size: 25px;
-        margin-bottom: 15px;
-    }
-
-    .botao {
-        width: 250px;
-        height: 80px;
-        font-size: 20px;
-    }
 }
