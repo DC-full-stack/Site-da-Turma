@@ -2,7 +2,6 @@
 * {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    /*height: 100%*/
 }
 
 body {
@@ -13,7 +12,7 @@ main {
     text-align: justify;
     background-color: #fff;
     border-radius: 20px;
-    width: 700px;
+    max-width: 700px;
     padding: 3%;
     margin: auto;
 }
@@ -37,7 +36,6 @@ h1 {
 .container-video {
     display: flex;
     justify-content: center;
-    padding-right: 0px;
     margin-bottom: 5%;
 }
 
@@ -47,7 +45,6 @@ h2 {
 }
 
 .texto-container {
-    padding-left: 0px;
     padding-bottom: 3%;
 }
 

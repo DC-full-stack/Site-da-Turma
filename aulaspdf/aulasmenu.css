@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .navigation {
-    width: 610px;
+    max-width: 600px;
     height: 55px;
     background: rgb(0,79,111);
     display: flex;
