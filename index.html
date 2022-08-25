@@ -6,93 +6,136 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Site da Turma</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <link rel="stylesheet" href="./css/darkMode.css">
-  <link rel="stylesheet" href="./css/menu.css">
+  <!-- <link rel="stylesheet" href="./css/menu.css"> -->
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/homemain.css">
   <link rel="shortcut icon" href="imgs/nick/favicon.png" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="central-box">
 
-        <div id="btn">
-            <div class="btn-box">
-                <button class="btn">Darkmode</button>
-                <script>
-        
-                    const btn = document.querySelector('button.btn');
-                    const body = document.querySelector('body');
-                    
-                    btn.onclick = function() {
-                      this.classList.toggle('active')
-                      body.classList.toggle('active')
+    <header>
+        <nav class="nav-container">
+            <div class="nav-main">
+                <img width="50px" height="50px" src="imgs/nick/faviconlimpo.jpg">
+                <p class="nav-main-psdt">Site da Turma</p>
+                <div class="nav-main-back">
+                    <a href="#" class="nav-main-item">
+                        <p>Time</p>
+                    </a>
+                    <a href="#" class="nav-main-item">
+                        <p>Resumos</p>
+                    </a>
+                    <a href="#"  class="nav-main-item">
+                        <p>Notícias</p>
+                    </a>              
+                </div>
+                <span >
+                    <p>Conheça o código do nosso site => {            
+                        <button class="nav-main-button" onclick="location.href='http://github.com/DC-full-stack/Site-da-Turma'" type="button">
+                            <p>Conferir</p>
+                        </button> 
                     }
-          
-                </script>
+                    </p>
+                </span>
             </div>
 
-        </div>
+            <div class="nav-search">
+                <div id="search">
+                    <div class="search-box">
+                        <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
+                        <a href="" class="search-btn">
+                        <img src="./icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
+                        </a>
+                    </div>
+            
+                    <datalist id="options">
+                        <option value="Sobre"></option>
+                        <option value="Módulo 1"></option>
+                        <option value="Módulo 2"></option>
+                        <option value="Módulo 3"></option>
+                        <option value="Módulo 4"></option>
+                    </datalist>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <div id="search">
-            <div class="search-box">
-                <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
-                <a href="" class="search-btn">
-                <img src="./icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
-                </a>
+    <main>
+        <section class="main-container">
+            <div class="main-text">
+                <span>
+                    <p class="main-text-a">Esse projeto se chama </p>
+                    <p class="main-text-b">
+                        Site da Turma
+                        <img  width="50px" src="icons/fire.png" alt="fire">
+                    </p>
+                    <p class="main-text-c">E com ele, temos o objetivo de praticar HTML, CSS e JavaScript de forma colaborativa.</p>
+                </span>
+                <button class="main-repo-button" onclick="location.href='http://github.com/DC-full-stack/Site-da-Turma'" type="button">
+                    <p>Repositório</p>
+                </button> 
             </div>
     
-            <datalist id="options">
-                <option value="Sobre"></option>
-                <option value="Módulo 1"></option>
-                <option value="Módulo 2"></option>
-                <option value="Módulo 3"></option>
-                <option value="Módulo 4"></option>
-            </datalist>
-        </div>
-        
-        <div id="menu">
-            <div class="navigation">
-                <ul>
-                    <li class="list">
-                        <a href="pages/sobre.html">
-                            <span > <ion-icon name="people-outline"></ion-icon> </span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="pages/modulo01.html">
-                            <span> 1 </span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="pages/erro404.html">
-                            <span> 2 </span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="pages/erro404.html">
-                            <span> 3 </span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="pages/erro404.html">
-                            <span> 4 </span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="pages/erro404.html">
-                            <span> <ion-icon name="beer-outline"></ion-icon> </span>
-                        </a>
-                    </li>
-                    <div class="indicator"></div>
-                </ul>
-            </div>    
-    
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-          
-        </div>
+            <div class="main-logo">
+                <img width="500px" src="imgs/nick/resumeImg-removebg.png" alt="site da turma">
+            </div>
+            <div class="main-ornament">
+                <img class="main-ornament-img" src="icons/sdtback-removebg.png" width="200px">
+            </div>
+        </section>
 
-    </div>
+    </main>
+
+    <footer>
+        <div div class="dc-footer">
+            <div class="dc-footer-content">
+                <div class="dc-footer-content-sdt">
+                    <a href="#">
+                        <img src="imgs/nick/favicon.png" alt="dc-logo">
+                        <p class="pds">Site da Turma</p>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                    <img src="icons/Group 53511.png" alt="redes sociais">
+                </div>
+                <div class="dc-footer-content-information">
+                    <h4>Informação</h4>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Time</a></li>
+                        <li><a href="#">Resumos</a></li>
+                        <li><a href="#">Repositório</a></li>
+                        <li><a href="#">Capacitações</a></li>
+                    </ul>
+                </div>
+                <div class="dc-footer-content-contact">
+                    <h4>Contato</h4>
+                    <p>
+                        Av. Santos Dumont, 1510 - 100 andar 
+                        - Aldeota, Fortaleza - CE, 60150-161
+                    </p>
+                    <p>
+                        (85) 99999-9999
+                    </p>
+                </div>
+            </div>                
+            <hr>
+            <div class="dc-footer-copy">
+                <p>@ 2022 Site da Turma</p>
+            </div>
+    </footer>
+
  </body>
 </html>
 

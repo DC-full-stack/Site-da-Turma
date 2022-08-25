@@ -1,0 +1,63 @@
+/* ===================================================
+section main
+=================================================== */
+
+/* --------------------  *  ----------------------- */
+
+:root {
+    --orange: rgb(233,108,31);
+    --gray: rgb(152,143,135);
+    --light-gray: rgb(245, 242, 239);    
+    --dark-gray: rgb(33, 32, 31);
+    --blue: rgb(0,79,111);
+}
+main {
+    background-color: var(--light-gray);
+    font-family: 'Play', sans-serif;
+}
+.main-container {
+    /* margin-left: 108px; */
+    display: flex;
+    color: var(--dark-gray);
+}
+.main-text{
+    margin: 70px;
+    width: 550px;
+}
+.main-text-a {
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--orange);
+}
+.main-text-b {
+    font-weight: 700;
+    font-size: 70px;   
+    margin: 0;
+}
+.main-text-c{
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 25px;
+    margin: 30px 0;
+}
+.main-repo-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--orange);
+    border-style: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.main-logo {    
+    position: absolute;
+    top: 300px;
+    left: 750px;
+}
+.main-ornament {
+    position: absolute;
+    left: 700px;
+    top: 270px;
+} 
