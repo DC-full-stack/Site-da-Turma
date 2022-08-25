@@ -16,12 +16,11 @@ main {
     font-family: 'Play', sans-serif;
 }
 .main-container {
-    /* margin-left: 108px; */
     display: flex;
     color: var(--dark-gray);
 }
 .main-text{
-    margin: 70px;
+    margin: 100px;
     width: 550px;
 }
 .main-text-a {
