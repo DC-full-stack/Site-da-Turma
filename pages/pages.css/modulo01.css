@@ -1,47 +1,62 @@
-/* =====================================================
-RESET
-======================================================== */
+/* =======================================================
+footer
+======================================================= */
+
+/* ----------------------  *  ------------------------- */
+
+:root {
+    --orange: rgb(233,108,31);
+    --gray: rgb(152,143,135);
+    --light-gray: rgb(245, 242, 239);    
+    --dark-gray: rgb(33, 32, 31);
+    --blue: rgb(0,79,111);
+}
+
 * {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-family: sans-serif;
+    font-family: 'Play', sans-serif;
     text-decoration: none;
 }
+
 /* =====================================================
 title
 ======================================================== */
-
 .module1__title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    height: 5rem;
-    color: #000000;
-    background-color: rgb(152,143,135);
+    padding: 10px;
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
     text-align: center;
 }
 
 .module1__title .h1 {
-    margin: auto;
+    font-size: 25px;
 }
 
 .contadorDeVisualizacoes {
+    display: flex;
     font-weight: bold;
-    font-size: 2.3rem;
-    margin-top: 1.2rem;
-    margin-right: 1rem;
+    font-size: 25px;
+}
+.contadorDeVisualizacoes p {
+    margin-top: 12px;
+}
+.contador {
+    width: 70px;
+    height: 50px;
+    margin: 0 20px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-.contador {
-    margin-top: 10px;
-    display: flex;
-    justify-content: end;
-    width: 70px;
-    margin-right: 10px;
-    height: 50px;
-    border: 2px solid black;
+.module1__title .h2 {
+    margin: 0 30px;
 }
+
 /* =====================================================
 left colum
 ======================================================== */
@@ -63,7 +78,7 @@ left colum
 .navigator {
     width: 55px;
     height: 450px;
-    background: rgb(0,79,111);
+    background: rgb(0, 79, 111);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,10 +92,12 @@ left colum
     width: 100%;
     height: 90%;
 }
+
 .navigator ul li {
     list-style: none;
     height: 90%;
 }
+
 .navigator ul li a {
     display: flex;
     flex-direction: column;
@@ -98,7 +115,7 @@ left colum
 .navigator ul li a:hover {
     width: 55px;
     height: 55px;
-    background: rgb(233,108,31);
+    background: rgb(233, 108, 31);
     text-align: center;
     border-radius: 50%;
     color: rgb(255, 255, 255);
@@ -106,6 +123,7 @@ left colum
     transform: scale(1.3);
     transition: 0.2s ease-in-out;
 }
+
 /* =====================================================
 main content
 ======================================================== */
@@ -127,9 +145,9 @@ main content
 }
 
 .txtIntro {
-    background-color: rgb(152,143,135);
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
     font-size: 15px;
-    color: #000000;
     padding: 10px;
     padding-left: 30px;
     width: 92%;
@@ -144,6 +162,7 @@ main content
     width: 92%;
     border: 1px solid #000000;
 }
+
 /* =====================================================
 resume aside
 ======================================================== */
@@ -151,13 +170,13 @@ resume aside
 .module1__resume_aside {
     /* text-align: center; */
     width: 35vw;
-    color: aliceblue; 
+    color: aliceblue;
     border: 1px solid black;
     margin-top: 15px;
 }
 
 .module1__resume_board {
-    background-color: rgb(0,79,111);
+    background-color: rgb(0, 79, 111);
     /* border: 1px solid black; */
     border: none;
     border-radius: 30px;
@@ -168,25 +187,28 @@ resume aside
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     box-shadow: 0 0 15px rgb(31, 125, 233);
 }
 
-.resume-title{
+.resume-title {
     width: 100%;
     height: 20%;
     text-align: left;
 }
-.resume-content{
+
+.resume-content {
     width: 100%;
     height: 80%;
     text-align: left;
 }
-.resume-content p{
+
+.resume-content p {
     width: 100%;
     text-align: justify;
 }
+
 .img-content {
     display: flex;
     width: 100%;
@@ -194,8 +216,8 @@ resume aside
     justify-content: center;
     align-items: center;
 }
+
 .resumeImg {
     width: 200px;
     height: 200px;
 }
-
