@@ -199,7 +199,7 @@ let tempo = setInterval(relogio, 1000)
 
 const dataAtual = new Date().toLocaleDateString();
 
-document.getElementById("dataAtual").innerHTML = `do dia: ${dataAtual}`
+document.getElementById("dataAtual").innerHTML = `do dia => {  ${dataAtual}  }`
 
 // ============================================================================
 // renderiza Quadro lateral

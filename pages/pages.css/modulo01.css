@@ -1,53 +1,60 @@
-/* =====================================================
-RESET
-======================================================== */
+/* =======================================================
+footer
+======================================================= */
+
+/* ----------------------  *  ------------------------- */
+
+:root {
+    --orange: rgb(233,108,31);
+    --gray: rgb(152,143,135);
+    --light-gray: rgb(245, 242, 239);    
+    --dark-gray: rgb(33, 32, 31);
+    --blue: rgb(0,79,111);
+}
+
 * {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-family: sans-serif;
+    font-family: 'Play', sans-serif;
     text-decoration: none;
 }
 
 /* =====================================================
 title
 ======================================================== */
-
 .module1__title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    height: 5rem;
-    color: #000000;
-    background-color: rgb(152, 143, 135);
+    padding: 10px;
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
     text-align: center;
 }
 
 .module1__title .h1 {
-    margin: auto;
+    font-size: 25px;
 }
 
 .contadorDeVisualizacoes {
-    font-weight: bold;
-    font-size: 2.3rem;
-    margin-top: 1.2rem;
-    margin-right: 1rem;
-}
-
-.contador {
-    margin-top: 10px;
     display: flex;
-    justify-content: end;
+    font-weight: bold;
+    font-size: 25px;
+}
+.contadorDeVisualizacoes p {
+    margin-top: 12px;
+}
+.contador {
     width: 70px;
-    margin-right: 10px;
     height: 50px;
+    margin: 0 20px;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 .module1__title .h2 {
-    margin: auto;
-    font-size: 30px;
-    margin-right: 49%;
+    margin: 0 30px;
 }
 
 /* =====================================================
@@ -138,9 +145,9 @@ main content
 }
 
 .txtIntro {
-    background-color: rgb(152, 143, 135);
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
     font-size: 15px;
-    color: #000000;
     padding: 10px;
     padding-left: 30px;
     width: 92%;
