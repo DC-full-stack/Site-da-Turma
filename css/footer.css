@@ -1,0 +1,109 @@
+/* ===================================================
+footer
+=================================================== */
+
+/* --------------------  *  ----------------------- */
+
+:root {
+    --orange: rgb(233,108,31);
+    --gray: rgb(152,143,135);
+    --light-gray: rgb(245, 242, 239);    
+    --dark-gray: rgb(33, 32, 31);
+    --blue: rgb(0,79,111);
+}
+
+footer {
+    background: var(--dark-gray);
+    color: white;
+    padding: 40px 70px 0;    
+    font-family: 'Play', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.dc-footer-content {
+    display: flex;
+}
+.dc-footer-content ul {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+}
+.dc-footer-content h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.dc-footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===================================================
+site da turma
+=================================================== */
+
+.dc-footer-content-sdt {
+    width: 307px;
+}
+.dc-footer-content-sdt a {
+    display: flex;
+    align-items: baseline;
+}
+.dc-footer-content-sdt a img {
+    width: 33px;
+}
+.dc-footer-content-sdt a p {
+    margin-left: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 36.3951px;
+}
+.dc-footer-content-sdt p {
+    margin-bottom: 40px ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* ===================================================
+information
+=================================================== */
+
+.dc-footer-content-information {
+    margin-left: 205px;
+    width: 135px;
+}
+
+
+/* ===================================================
+contact
+=================================================== */
+
+
+.dc-footer-content-contact {
+    margin-left: 168px;
+    width: 231px;
+}
+.dc-footer-content-contact p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 14px;
+}
+
+/* ===================================================
+copy
+=================================================== */
+
+hr {
+    margin: 34px 0 23px 0;
+    opacity: 0.3;
+    max-width: 1240px;
+}
+.dc-footer-copy {
+    padding-bottom: 22px;
+    text-align: center;
+}
