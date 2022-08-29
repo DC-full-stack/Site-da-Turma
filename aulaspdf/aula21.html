@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> AULA 21</title>
     <link rel="stylesheet" href="aulaspdf.css">
+    <link rel="stylesheet" href="aulasmenu.css">
 </head>
 
 <style>
@@ -28,6 +30,10 @@
 </style>
 
 <body>
+    <header class="navigation">
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <main>
         <div class="container-paginicio">
             <p class="paginicio">
@@ -46,16 +52,28 @@
         </h1>
 
         <div class="container-video">
-            <iframe width="600" height="315" src="https://www.youtube.com/embed/vB-aPrlSEXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="600" height="315" src="https://www.youtube.com/embed/7MG3O_-ZqGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="600" height="315" src="https://www.youtube.com/embed/mc3TKp2XzhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="600" height="315" src="https://www.youtube.com/embed/UftSB4DaRU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/vB-aPrlSEXs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/7MG3O_-ZqGc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/mc3TKp2XzhI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/UftSB4DaRU4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
-      <h2>
-          Objeto
-      </h2>
-<br>
+        <h2>
+            Objeto
+        </h2>
+        <br>
         <div class="texto-container">
             <p>
                 Ex:
@@ -66,14 +84,14 @@
             <p class="subtitulos">
                 Forma de acessar um elemento dentro do objeto
             </p>
-                <ol>
-                    <li>
-                        Let n = pessoa.nome
-                    </li>
-                    <li>
-                        Let n = pessoa["nome"]
-                    </li>
-                </ol>
+            <ol>
+                <li>
+                    Let n = pessoa.nome
+                </li>
+                <li>
+                    Let n = pessoa["nome"]
+                </li>
+            </ol>
 
             <p class="subtitulos">
                 Acessar elemento dentro do objeto que está dentro de um array
@@ -89,77 +107,77 @@
 
             <img src="/aulaspdf/imgs-aulas/aula21/imprimeObjeto.png" alt="" width="450rem">
         </div>
-        
+
         <div class="texto-container">
             <h2>
                 Declaração e chamada de função
             </h2>
-<br>
-        <p>
-            Ex:
-        </p>
+            <br>
+            <p>
+                Ex:
+            </p>
 
-        <img src="/aulaspdf/imgs-aulas/aula21/ex1Function.png" alt="">
+            <img src="/aulaspdf/imgs-aulas/aula21/ex1Function.png" alt="">
 
-        <p>
-            let x = 6
-        </p>
+            <p>
+                let x = 6
+            </p>
 
-        <p>
-            soma(x, 10) sendo x igual a 6, 6 passa a ser o parâmetro "a" retornando 16 como resultado
-        </p>
+            <p>
+                soma(x, 10) sendo x igual a 6, 6 passa a ser o parâmetro "a" retornando 16 como resultado
+            </p>
 
-        <p>
-            <b>OBS: Também é possível colocar uma function dentro de uma variável:</b>
-        </p>
+            <p>
+                <b>OBS: Também é possível colocar uma function dentro de uma variável:</b>
+            </p>
 
-        <p>
-            let y = soma <br>
-            y(2, 10) == 12 sendo a == 2 e b == 10
-        </p>
-<br>
-        <p class="subtitulos">
-            Em uma calculadora ao clicar no botão de igual teria a ativação de uma função OBS: op == operação (soma,
-            subtração, multiplicação, divisão, ...)
-        </p>
+            <p>
+                let y = soma <br>
+                y(2, 10) == 12 sendo a == 2 e b == 10
+            </p>
+            <br>
+            <p class="subtitulos">
+                Em uma calculadora ao clicar no botão de igual teria a ativação de uma função OBS: op == operação (soma,
+                subtração, multiplicação, divisão, ...)
+            </p>
 
-        <img src="/aulaspdf/imgs-aulas/aula21/ex2Function.png" alt="">
+            <img src="/aulaspdf/imgs-aulas/aula21/ex2Function.png" alt="">
 
-        <img src="/aulaspdf/imgs-aulas/aula21/ex2.1function.png" alt="">
+            <img src="/aulaspdf/imgs-aulas/aula21/ex2.1function.png" alt="">
 
-        <p>
-            executarOperacao(soma, 1, 2) // Chamada da function executarOperacao
-        </p>
+            <p>
+                executarOperacao(soma, 1, 2) // Chamada da function executarOperacao
+            </p>
 
-        <p>
-            op = função soma, a = 1 e b = 2, assim: return == 3
-        </p>
+            <p>
+                op = função soma, a = 1 e b = 2, assim: return == 3
+            </p>
 
-        <p>
-            Se tivesse uma function multiplicação ao chamar executarOperacao teria
-        </p>
+            <p>
+                Se tivesse uma function multiplicação ao chamar executarOperacao teria
+            </p>
 
-        <p>
-            Op = função multiplicação, a = 1, b = 2, assim: return == 2
-        </p>
+            <p>
+                Op = função multiplicação, a = 1, b = 2, assim: return == 2
+            </p>
 
-        <p>
-            <b>OBS: A ordem dos parâmetros importa</b>
-        </p>
+            <p>
+                <b>OBS: A ordem dos parâmetros importa</b>
+            </p>
 
-        <img src="/aulaspdf/imgs-aulas/aula21/ex3.1function.png" alt="">
-        <br>
-        <img src="/aulaspdf/imgs-aulas/aula21/ex3.2function.png" alt="">
+            <img src="/aulaspdf/imgs-aulas/aula21/ex3.1function.png" alt="">
+            <br>
+            <img src="/aulaspdf/imgs-aulas/aula21/ex3.2function.png" alt="">
 
-        <p>
-            Seria como ter feito assim:
-        </p>
+            <p>
+                Seria como ter feito assim:
+            </p>
 
-        <img src="/aulaspdf/imgs-aulas/aula21/ex3.3function.png" alt="">
+            <img src="/aulaspdf/imgs-aulas/aula21/ex3.3function.png" alt="">
 
-        <p>
-            ExecutarOperacao(subtracao, 3, 10)
-        </p>
+            <p>
+                ExecutarOperacao(subtracao, 3, 10)
+            </p>
 
         </div>
 
@@ -169,27 +187,28 @@
 
         <div class="texto-container">
             <p>
-            console.log
-        </p>
+                console.log
+            </p>
 
-        <p>
-            Console == objeto
-        </p>
+            <p>
+                Console == objeto
+            </p>
 
-        <p>
-            Log == chave e dentro dessa chave possui uma função
-        </p>
+            <p>
+                Log == chave e dentro dessa chave possui uma função
+            </p>
 
-        <p>
-            É possível ver dentro do console no DevTools
-        </p>
+            <p>
+                É possível ver dentro do console no DevTools
+            </p>
 
-        <img src="/aulaspdf/imgs-aulas/aula21/console.log" alt="" width="600rem">
-        
+            <img src="/aulaspdf/imgs-aulas/aula21/console.log" alt="" width="600rem">
+
         </div>
-<br>
+        <br>
         <div class="botao-container">
-            <a target="_blank" href="../pdfs/Aula 21 [26.05.22] - Objeto, Função e Interação do Javascript com o navevgador.pdf">
+            <a target="_blank"
+                href="../pdfs/Aula 21 [26.05.22] - Objeto, Função e Interação do Javascript com o navevgador.pdf">
                 <button class="botao">
                     Imprimir
                 </button>
@@ -199,7 +218,9 @@
                     Desafio
                 </button>
             </a>
-        </div>  
+        </div>
     </main>
+    <script src="../pages/scripts/navegation.js"></script>
 </body>
+
 </html>
