@@ -2,21 +2,28 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site da Turma</title>
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
-  <link rel="stylesheet" href="./css/darkMode.css">
-  <!-- <link rel="stylesheet" href="./css/menu.css"> -->
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/homemain.css">
-  <link rel="shortcut icon" href="imgs/nick/favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site da Turma</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <!--------------------  CSS ---------------------->
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/homemain.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <!--------------------  favicon ---------------------->
+    <link rel="shortcut icon" href="imgs/nick/favicon.png" type="image/x-icon" />
+
+    <!--------------------  fonts ---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--------------------  jQuery para buscador ---------------------->
+    <!-- <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script> -->
 
 </head>
 
@@ -31,41 +38,38 @@
                     <a href="pages/modulo01.html" class="nav-main-item">
                         <p>Resumos</p>
                     </a>
-                    <a href="pages/sobre.html" class="nav-main-item">
+                    <a href="pages/CarrosselTime/sobre.html" class="nav-main-item">
                         <p>Time</p>
                     </a>
-                    <a href="#"  class="nav-main-item">
+                    <a href="#" class="nav-main-item">
                         <p>Notícias</p>
-                    </a>              
+                    </a>
                 </div>
-                <span >
-                    <p>Conheça o código do nosso site => {            
-                        <button class="nav-main-button" onclick="location.href='http://github.com/DC-full-stack/Site-da-Turma'" type="button">
+                <span>
+                    <p>Conheça o código do nosso site => {
+                        <button class="nav-main-button"
+                            onclick="location.href='http://github.com/DC-full-stack/Site-da-Turma'" type="button">
                             <p>Conferir</p>
-                        </button> 
-                    }
+                        </button>
+                        }
                     </p>
                 </span>
             </div>
 
-            <div class="nav-search">
-                <div id="search">
-                    <div class="search-box">
-                        <input type="text" class="search-txt" placeholder="Projeto Site da Turma" autocomplete="off" role="combobox" list="options">
-                        <a href="" class="search-btn">
-                        <img src="./icons/icon_loupe.png" alt="Lupa" width="20px" height="20px" draggable="false">
-                        </a>
+            <article class="nav-search">
+                <section class="search-box">
+                    <input type="text" id="search" placeholder="buscador" search="aulas">
+                </section>
+
+                <section class="content-search">
+                    <div class="content-table" id="aulas">
+                        <div id="list">
+                        </div>
                     </div>
-            
-                    <datalist id="options">
-                        <option value="Sobre"></option>
-                        <option value="Módulo 1"></option>
-                        <option value="Módulo 2"></option>
-                        <option value="Módulo 3"></option>
-                        <option value="Módulo 4"></option>
-                    </datalist>
-                </div>
-            </div>
+                </section>
+
+                <script type="module" src="js/search.js"></script>
+            </article>
         </nav>
     </header>
 
@@ -76,15 +80,17 @@
                     <p class="main-text-a">Com o projeto</p>
                     <p class="main-text-b">
                         Site da Turma
-                        <img  width="50px" src="icons/fire.png" alt="fire">
+                        <img width="50px" src="icons/fire.png" alt="fire">
                     </p>
-                    <p class="main-text-c">temos o objetivo de praticar HTML, CSS e JavaScript de forma colaborativa.</p>
+                    <p class="main-text-c">temos o objetivo de praticar HTML, CSS e JavaScript de forma colaborativa.
+                    </p>
                 </span>
-                <button class="main-repo-button" onclick="location.href='http://github.com/DC-full-stack/Site-da-Turma'" type="button">
+                <button class="main-repo-button" onclick="location.href='http://github.com/DC-full-stack/Site-da-Turma'"
+                    type="button">
                     <p>Repositório</p>
-                </button> 
+                </button>
             </div>
-            
+
             <div class="main-ornament">
                 <img class="main-ornament-img" src="icons/sdtback-removebg.png" width="200px">
             </div>
@@ -104,7 +110,7 @@
                         <p class="pds">Site da Turma</p>
                     </a>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore.
                     </p>
                     <img src="icons/Group 53511.png" alt="redes sociais">
@@ -122,20 +128,20 @@
                 <div class="dc-footer-content-contact">
                     <h4>Contato</h4>
                     <p>
-                        Av. Santos Dumont, 1510 - 100 andar 
+                        Av. Santos Dumont, 1510 - 100 andar
                         - Aldeota, Fortaleza - CE, 60150-161
                     </p>
                     <p>
                         (85) 99999-9999
                     </p>
                 </div>
-            </div>                
+            </div>
             <hr>
             <div class="dc-footer-copy">
                 <p>@ 2022 Site da Turma</p>
             </div>
     </footer>
 
- </body>
-</html>
+</body>
 
+</html>
