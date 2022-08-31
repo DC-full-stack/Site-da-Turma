@@ -1,0 +1,57 @@
+/* ===================================================
+search
+=================================================== */
+
+/* --------------------  *  ----------------------- */
+
+:root {
+    --orange: rgb(233,108,31);
+    --gray: rgb(152,143,135);
+    --light-gray: rgb(245, 242, 239);    
+    --dark-gray: rgb(33, 32, 31);
+    --blue: rgb(0,79,111);
+}
+.nav-search {
+    display: flex;
+}
+
+#search{
+    width: 22vw;
+    height: 25px;
+    font-size: 15px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    margin: 0;
+}
+.content-search{
+    width: 67vw;
+    height: 115px;
+    position: sticky;
+    left: 470px;
+    background: var(--light-gray);
+    display: none;
+    border-radius: 10px;
+}
+
+.content-table{
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+.content-table a, #list{
+    text-decoration: none;
+    padding: 0 20px;
+    color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;  
+}
+.content-table a:hover{
+    background: rgba(0,0,0,0.2);
+}

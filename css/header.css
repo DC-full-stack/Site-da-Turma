@@ -33,7 +33,7 @@ nav main
     display: flex;
     align-items: center;
     margin-left: 4px;
-    height: 138px;
+    height: 100px;
 }
 .nav-main-psdt {
     font-size: 40px;
