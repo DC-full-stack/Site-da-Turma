@@ -61,6 +61,7 @@ site da turma
     color: white;
     font-weight: 600;
     font-size: 36.3951px;
+    overflow-y: hidden;
 }
 .dc-footer-content-sdt p {
     margin-bottom: 40px ;
@@ -68,6 +69,23 @@ site da turma
     font-size: 16px;
     line-height: 26px;
 }
+.dc-footer .dc-footer-content .dc-footer-content-sdt .main-repo-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--blue);
+    border-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    overflow-y: hidden;
+}
+
+.dc-footer .dc-footer-content .dc-footer-content-sdt .main-repo-button p {
+    margin-top: 7px;
+    font-weight: 700;
+}
+
 /* ===================================================
 information
 =================================================== */

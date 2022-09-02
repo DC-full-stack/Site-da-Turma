@@ -41,6 +41,7 @@ nav main
     color: var(--blue);
     letter-spacing: -0.01em;
     margin: 0 15px;
+    overflow-y: hidden;
 }
 .nav-main-back{
     background: var(--light-gray);
@@ -50,6 +51,7 @@ nav main
     margin: 50px;
     align-items: center;
     padding: 0 20px;
+    overflow-x: clip;
 }
 .nav-main-item {
 
