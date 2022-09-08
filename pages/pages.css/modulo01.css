@@ -215,9 +215,47 @@ resume aside
     height: 90%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .resumeImg {
     width: 200px;
     height: 200px;
+}
+/* -------------- modal -------------- */
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 79, 111, 0.464);
+    display: none;
+    /* display: flex; */
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background: white;
+    padding: 50px;
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+}
+.modal img {
+    height:5rem;
+    width:5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.3rem solid var(--orange);
+}
+.active {
+    display: flex;
+}
+.nick{
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 700;
 }

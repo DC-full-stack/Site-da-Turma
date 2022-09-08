@@ -101,14 +101,35 @@
                 </div>
             </div> -->
 
-            <div class="img-content">
+            <div onclick="openModal()" class="img-content">
                 <img class="resumeImg" src="../imgs/nick/resumeImg.jpg" alt="Site da Turma">
             </div>
-
         </div>
+
+        <script>
+            const main = document.querySelector('.main-logo');
+
+            const openModal = () => {
+                const modal = document.querySelector('.modal-container').classList;  
+                modal.add('active');
+                window.onclick = function(event) {
+                    const modal = document.querySelector('.modal-container').classList;  
+                    if (event.target.className.indexOf('modal-container') !== -1) {
+                        modal.remove('active');
+                    }
+                }
+            }
+        </script>
 
 
     </div>
+
+    <section  class="modal-container">
+        <div class="modal">
+            <a target="_blank" href="https://nickugarte.github.io/design/"> <img src="../imgs/nick/pf2.jpg" alt="nick" width="50px"></a> 
+            <p>Essa arte foi desenvolvida pelo Designer Gráfico <a class="nick" target="_blank" href="https://nickugarte.github.io/design/">Nicholas Ugarte</a> que gostou e acreditou na ideia do projeto Site da Turma.</p>
+        </div>
+    </section>
 
     <script src="scripts/scriptsModulos.js">
     </script>
