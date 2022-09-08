@@ -94,3 +94,7 @@ li {
     font: bold 15px arial, sans-serif;
     text-shadow:none;
 }
+
+.texto-container .sobre {
+    margin-left: -18%;
+}
